@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntar colegio</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <div id="page">
+        <header role=”banner”>
+            <a href="./indice.html"><h1>Día del Pijama</h1></a> 
+        </header>
+        <nav role="navigation">
+            <ul>
+                <li id="diapijama"><a href="./indice.html"><img src="./imagenes/pijama-icono.png" alt="icono de pijama"> Día del Pijama</a></li>
+                <li id="menoresriesgo"><a href="./riesgo.html"><img src="./imagenes/triste-icono.png" alt="icono de un dibujo de niña triste"> Menores en riesgo</a></li>
+                <li id="acogida"><a href="./acogida.html"><img src="./imagenes/acogida-icono.png" alt="icono de una casa con un corazon dentro"> Acogida</a></li>
+                <li id="galeria"><a href="./galeria.html"><img src="./imagenes/galeria-icono.png" alt="icono de tres cuadros, representando galeria"> Galeria</a></li>
+                <li id="apuntacolegio"><img src="./imagenes/colegio-icono.png" alt="icono de un colegio"> ¡¡Apunta tu Colegio!!</li>
+            </ul>
+        </nav>
+        <main id="mainform" role="main">
+            <h2 role="heading" aria-level="2">Rellena este formulario para participar en el Día del pijama 2022</h2>
+            <div id="form" aria-required="true" > 
+            <label for="nombrecol">Nombre del colegio, instituto o escuela infantil <span>*</span></label>
+            <input type="text" name="nombrecol" required>
+            <label for="nombre">Nombre de quien rellena el formulario <span>*</span></label>
+            <input type="text" name="nombre" required>
+            <label for="apellidos">Apellidos de quien rellena el formulario <span>*</span></label>
+            <input type="text" name="apellidos" required>
+            <label for="cargo">Cargo de quien rellena el formulario <span>*</span></label>
+            <input type="text" name="cargo" required>
+            <label for="telf">Teléfono <span>*</span></label>
+            <input type="tel" name="telf" placeholder="(Código de área) Número" required>
+            <label for="correo">Correo electrónico <span>*</span></label>
+            <input type="email" name="correo" placeholder="nombre@ejemplo.com" required>
+            <label for="ccaa">Comunidad autónoma <span>*</span></label>
+            <input type="text" name="ccaa" required> 
+            <label for="prov">Provincia <span>*</span></label>
+            <input type="text" name="prov" required>
+            <div>
+            <input type="checkbox" name="comunicaciones">
+            <label for="comunicaciones">Acepto recibir información sobre el Día del pijama</label></div>
+            <button type="submit" role="button">Enviar</button>
+        </div>
+        <a href="#page">Volver arriba</a>
+        </main>
+        <footer role="contentinfo">
+            <h3>SIGUENOS EN...</h3>
+            <div id="RRSS">
+            <a href="https://twitter.com/"><img src="./imagenes/logo/gorjeo.png" alt="twitter"></a>
+            <a href="https://facebook.com/"><img src="./imagenes/logo/facebook.png" alt="facebook"></a>
+            <a href="https://www.pinterest.es/"><img src="./imagenes/logo/pinterest.png" alt="pinteres"></a> 
+            <a href="https://www.instagram.com/"><img src="./imagenes/logo/instagram.png" alt="instagram"></a> 
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

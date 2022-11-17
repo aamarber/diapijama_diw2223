@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --principal-backgroundColor1: rgb(58, 82, 216);
+    --principal-backgroundColor2: rgb(168, 175, 235);
+    --principal-color: rgb(250, 243, 243);
+    --indexMain-backgroundColor: rgb(229, 241, 248);
+    --main-height: 67%;
+    --default-font-family: Arial, Helvetica, sans-serif;
+    --movil-font-size: 0.8em;
+}
+
+html {
+    font-family: var(--default-font-family);
+}
+
+.contenedor_principal {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.centrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colores {
+    background: radial-gradient(var(--principal-backgroundColor1), var(--principal-backgroundColor2));
+    color: var(--principal-color);
+    font-weight: bolder;
+}
+
+.header {
+    height: 15%;
+}
+
+.nav {
+    height: 10%;
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav a {
+    color: var(--headerNavFooter-color);
+    margin: 4em;
+    text-decoration: none;
+}
+
+a:hover {
+    border:3px dotted white;
+}
+
+
+.main {
+    overflow: hidden;
+    display: flex;
+    height: var(--main-height);
+    background-color: var(--indexMain-backgroundColor);
+
+}
+button{
+    animation:mover_texto 5s linear;
+    animation-delay:2s;
+    animation-iteration-count:3;
+    margin:1em;
+}
+.footer {
+    height: 8%;
+    text-align: center;
+}
+.footer a{
+    color:white;
+}
+
+.scroll {
+    overflow-Y: scroll;
+}
+
+
+h1 {
+    animation:titulo 2s linear infinite;
+}
+
+h2,
+h3 {
+    color: var(--principal-backgroundColor1);
+}
+
+.oculto {
+    display: none;
+}
+
+.mostrar:focus+.oculto {
+    display: block;
+    margin-bottom: 0.3em;
+}
+
+.imagen_redonda img {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    border: 8px dotted var(--principal-backgroundColor1);
+    animation: tamaño_foto 10s linear infinite;
+}
+
+/*-----------CSS ṕágina protección-----------*/
+
+.main_proteccion {
+    display: grid;
+    height: var(--main-height);
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    background-image: url('../img/manos.jpg');
+    background-size: contain;
+}
+
+.proteccion1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-color: var(--indexMain-backgroundColor);
+    z-index: 20;
+    font-size: 1.3em;
+    padding: 1.3em;
+}
+
+.imagen_proteccion1,
+.imagen_proteccion2 {
+    grid-row-start: 1;
+    background-size: contain;
+    background-repeat: space;
+}
+
+.imagen_proteccion1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url('../img/niños_africa.jpg');
+    animation: mover_proteccion1 10s linear infinite;
+}
+
+.imagen_proteccion2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    background-image: url('../img/grupo_niños.jpg');
+    animation: mover_fotos_atras 10s linear infinite;
+}
+
+/*---------CSS página acogimiento----------*/
+.acogimiento {
+    flex-basis: 50%;
+    font-size: 1.3em;
+}
+
+.acogimiento ul {
+    padding: 1.5em;
+    list-style-type: circle;
+}
+
+.acogimiento div {
+    padding: 1.5em;
+    height: 100%;
+
+}
+
+.imagen_acogimiento {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.imagenes {
+    flex-basis: 50%;
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+
+/*---------CSS página procedimiento-----------*/
+
+.procedimiento {
+    width: 60%;
+    flex-direction: column;
+    background-color: var(--indexMain-backgroundColor);
+    padding: 1.5em;
+    font-size: 1.2em;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.main_procedimiento {
+    background-image: url("../img/grupo_niños.jpg");
+    height: var(--main-height);
+    background-size: cover;
+}
+
+/*---------CSS página fotos-----------*/
+
+.fotos {
+    height: var(--main-height);
+}
+
+.contiene_fotos1,
+.contiene_fotos2 {
+    display: flex;
+    height: 50%;
+    width: 205%;
+    background-color: var(--indexMain-backgroundColor);
+}
+
+.contiene_fotos1 img,
+.contiene_fotos2 img {
+    width: 16.6666%;
+    height: 100%;
+    padding: 0.5em;
+}
+
+.contiene_fotos1 img {
+    animation: mover_fotos_atras 10s ease-in-out infinite;
+}
+
+.contiene_fotos2 {
+    flex-direction: row-reverse;
+}
+
+.contiene_fotos2 img {
+    animation: mover_fotos_delante 10s ease-in-out infinite;
+}
+
+/*-----------ANIMACIONES-------------*/
+
+
+@keyframes mover_proteccion1 {
+    from {
+        transform: translateX(0);
+
+    }
+
+    50% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*animación que mueve las fotos en la página fotos y protección*/
+@keyframes mover_fotos_atras {
+    from {
+        transform: translateX(0);
+
+    }
+
+    50% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/*animación que mueve las fotos en la página fotos*/
+@keyframes mover_fotos_delante {
+    from {
+        transform: translateX(-100vw);
+    }
+
+    50% {
+        transform: translateX(0vw);
+    }
+
+    100% {
+        transform: translateX(-100vw);
+    }
+}
+
+/*animacion que aumenta y disminuye el tamaño
+de las fotos*/
+@keyframes tamaño_foto {
+    from {
+        transform: rotateY(0deg);
+
+    }
+
+    25% {
+        transform: rotateY(40deg);
+    }
+
+    50% {
+        transform: rotateY(0deg);
+    }
+
+    75% {
+        transform: rotateY(-40deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+@keyframes titulo{
+    from{
+        opacity:1;
+        font-size:4em;
+    }
+    90%{
+        opacity:0.5;
+    }
+    to{
+        opacity:0;
+    }
+}
+/*animación que mueve el h1 del header*/
+@keyframes mover_texto {
+    to {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(15deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    75% {
+        transform: rotate(-15deg);
+    }
+
+    from {
+        transform: rotate(0deg);
+    }
+}
+
+/*media para cuando gira el móvil*/
+@media (max-height:450px) {
+    .contenedor_principal {
+        overflow: scroll;
+    }
+
+    .header {
+        height: 23vh;
+    }
+    h1{
+        animation:mover_texto 2s linear infinite;
+    }
+    .nav a {
+        margin: 1em;
+        height: 10vh;
+    }
+    .proteccion1,
+    .acogimiento,
+    .procedimiento,
+    button{
+        font-size: var(--movil-font-size);
+    }
+    .fotos {
+        overflow: hidden;
+    }
+    .footer {
+        height: 11vh;
+    }
+}
+
+/*media para movil,
+he escogido 540 px porque era la medida que abarcaba más 
+dispositivos*/
+@media (max-width:540px) {
+
+    .imagenes {
+        position: sticky;
+        top: 0;
+        flex-direction: column;
+        width: 30%;
+    }
+    h1{
+        animation:mover_texto 2s linear infinite;
+    }
+    .nav a {
+        margin: 0.2em;
+    }
+
+    .proteccion1,
+    .acogimiento,
+    .procedimiento,
+    button,
+    .nav a {
+        font-size: var(--movil-font-size);
+    }
+
+    .acogimiento {
+        flex-basis: 70%;
+    }
+
+    .main_proteccion {
+        display: flex;
+        flex-direction: column;
+        background-size: contain;
+    }
+
+    .proteccion1 {
+        height: 80%;
+        z-index: 20;
+    }
+
+    .procedimiento {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .imagenes {
+        flex-basis: 30%;
+    }
+
+    .imagenes img {
+        width: 80%;
+    }
+
+    .imagen_proteccion1 {
+        margin-right: 2em;
+        height: 15%;
+    }
+
+    .imagen_proteccion2 {
+        height: 15%;
+    }
+}
