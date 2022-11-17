@@ -1,0 +1,106 @@
+@import './variable.css';
+
+main{
+    width: 100%;
+    padding: 0 10%;
+    margin: 0 auto;
+}
+.header img{
+    height: 400px;
+    min-width: 700px;
+    border-radius: 5px;
+}
+
+h1{
+    position: relative;
+    font-size: 3em;
+    height: 80px;
+    padding: 10px;
+}
+
+h2, h3, h4 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #6246ea;
+    color: var(--text-color-tertiary);
+}
+
+.descargaPDF {
+    font-size: 1em;
+    color: #272343;
+    color: var(--text-color);
+    text-decoration: underline;
+}
+.descargaPDF:hover{
+    cursor: pointer;
+}
+
+.contenedor_parrafo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contenedor_parrafo p {
+    width: 50%;
+}
+.contenedor_parrafo img {
+    width: 50%;
+    order: 1;
+    max-width: 550px;
+    border-radius: 5px;
+}
+
+.contenedor_cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    -ms-flex-pack: distribute;
+}
+
+.card{
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #bae8e8;
+    background-color: var(--tertiary-color);
+    padding: 10px;
+    border-radius: 10px;
+    font-variant: normal;
+    font-size: 1.2em;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 1024px) {
+    .contenedor_parrafo {
+        justify-content: center;
+    }
+    .contenedor_parrafo p, .contenedor_parrafo img {
+        width: 100%;
+    }
+    .header img{
+        width: 600px;
+        height: 380px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header img{
+        min-width: unset;
+        width: 100%;
+        height: unset;
+    }
+    main{
+        padding: 10px;
+    }
+}

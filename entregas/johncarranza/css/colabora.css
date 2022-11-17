@@ -1,0 +1,54 @@
+@import './variable.css';
+
+main{
+    padding: 10px;
+    width: 80%;
+    margin: 0 auto;
+}
+.background_banner.manos::before{
+    background-image: url(../img/manos.jpg);
+}
+h1{
+    -ms-transform: translate(-50%, -50%);
+}
+h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #6246ea;
+    color: var(--text-color-tertiary);
+    text-align: center;
+}
+.formas_ayuda{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+.ayuda{
+    width: 30%;
+    margin: 5px 10px;
+    background-color: #bae8e8;
+    background-color: var(--tertiary-color);
+    padding: 5px 10px;
+    border-radius: 10px;
+    min-width: 280px;
+}
+.icono_ayuda{
+    width: 100px;
+    margin: 10px auto;
+}
+.entidad_asaef{
+    width: 130px;
+}
+
+/*Media queries*/
+@media only screen and (max-width: 768px) {
+    main{
+        width: 100%;
+    }
+    .ayuda{
+        width: 100%;
+    }
+}

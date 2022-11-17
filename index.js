@@ -24,11 +24,13 @@
         let article = document.createElement('article');
         article.className = 'web';
 
+        const url = web.url.replace(/\s/g, '').toLowerCase();
+
         article.innerHTML = 
-        `<a href='${web.url}'>
-            <img src='${web.screenshot}' alt='Captura de pantalla de la web de ${web.author}'/>
+        `<a href='${url}'>
+            <img src='${url + '/screenshot.png'}' alt='Captura de pantalla de la web de ${web.author}'/>
         </a>
-        <h3>Trabajo de ${web.author}</h3>`;
+        <h3>${web.author}</h3>`;
 
         const webListElement = document.getElementById('web-list');
 

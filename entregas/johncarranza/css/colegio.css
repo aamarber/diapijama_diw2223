@@ -1,0 +1,155 @@
+@import './variable.css';
+
+*{
+    --campo-resaltado: #ffd803;
+}
+
+main{
+    padding: 10px;
+}
+
+h1{
+    position: relative;
+    font-size: 5em;
+    text-align: center;
+}
+fieldset{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    background-color: #272343;
+    background-color: var(--background-black-color);
+    color: #bae8e8;
+    color: var(--tertiary-color);
+    border-radius: 5px;
+    border: none;
+}
+
+fieldset span{
+    font-size: 2em;
+}
+fieldset label{
+    font-size: 1.5em;
+}
+
+fieldset input{
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    border-radius: 2px;
+    border: none;
+}   
+fieldset input:focus{
+    border: 5px solid #ffd803;
+    border: 5px solid var(--campo-resaltado);
+}
+#enviar:focus{
+    border-width: 1px;
+    background-color: #ffd803;
+    background-color: var(--campo-resaltado);
+}
+
+.section_formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contenedor_formulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 100%;
+}
+.contenedor_formulario img{
+    border-radius: 5px;
+    margin: auto 5px;
+    min-width: 400px;
+}
+.contenedor_formulario form{
+    margin: auto 0;
+}
+#enviar{
+    width: 100px;
+    background-color: #bae8e8;
+    background-color: var(--tertiary-color);
+    margin: auto;
+    transition: all 0.5s ease;
+}
+#enviar:hover{
+    background-color: #ffd803;
+    background-color: var(--campo-resaltado);
+    border: none;
+    box-shadow: #bae8e8 0 0.5em 0.5em -0.3em;
+    box-shadow: var(--tertiary-color) 0 0.5em 0.5em -0.3em;
+    transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+}
+
+.background_attached{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.background_attached::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    opacity: 0.35;
+}
+.background_attached.niño_pulgar::before{
+    background-image: url(../img/kid_approve.jpg);
+}
+p{
+    margin-top: 5px;
+    font-size: 2em;
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.8em;
+    }
+    fieldset {
+        width: 100%;
+    }
+    fieldset span{
+        font-size: 1.8em;
+    }
+    fieldset input, fieldset label{
+        font: 1.2em;
+    }
+    .section_formulario img{
+        width: 100%;
+        min-width: unset;
+        margin: 10px 0;
+    }
+    .background_attached{
+        height: auto;
+        min-height: 500px;
+    }
+    .contenedor_formulario {
+        flex-wrap: wrap;
+    }
+}

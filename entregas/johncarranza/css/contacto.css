@@ -1,0 +1,44 @@
+@import './colegio.css';
+
+#mensaje{
+    resize: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#mensaje:focus{
+    border: 5px solid #ffd803;
+    border: 5px solid var(--campo-resaltado);
+}
+
+.section_formulario img{
+    border-radius: 5px;
+    margin: auto 5px;
+    order: 2;
+}
+
+.background_attached{
+    height: 600px;
+}
+.background_attached.reloj_arena::before{
+    background-image: url(../img/reloj_arena.jpg);
+}
+
+.datos span{
+    font-size: 1em;
+    color: #bae8e8;
+    color: var(--tertiary-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .section_formulario{
+        flex-wrap: wrap;
+    }
+    .section_formulario img{
+        width: 60%;
+        margin: 15px 0;
+        order: unset;
+    }
+    .background_attached{
+        min-height: 600px;
+    }
+}

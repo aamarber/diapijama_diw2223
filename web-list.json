@@ -1,9 +1,12 @@
 {
     "weblist": [
         {
-            "url": "",
-            "screenshot": "",
-            "Author": ""
+            "url": "./entregas/johncarranza/",
+            "author": "John Carranza"
+        },
+        {
+            "url": "./entregas/josevicentefalcomilla/",
+            "author": "José Vicente Falcó Milla"
         }
     ]
 }

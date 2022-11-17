@@ -1,0 +1,91 @@
+* {
+  --main-dark-color: rgba(24, 70, 116, 255);
+  --main-blue-color: rgb(71, 181, 255);
+  --main-light-blue-color: rgb(235, 249, 255);
+}
+
+/*MAIN*/
+
+.imagen-grande {
+  display: -ms-flexbox; /*ie11*/
+  display: flex;
+  -ms-flex-align: start; /*ie11*/
+  align-items: flex-start;
+  -ms-flex-pack: end; /*ie11*/
+  justify-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 30px;
+  width: 60vw;
+  height: 60vh;
+  box-shadow: 0 0 20px var(--main-blue-color);
+  box-shadow: 0 0 20px rgb(71, 181, 255); /*ie11*/
+  margin: 1rem auto;
+  filter: grayscale(0.5);  
+  z-index: -1;
+  background-image: url('../img/dia_pijama2.png'); /*ie11*/
+  animation: cambioImagen 8s alternate infinite;
+}
+
+@keyframes cambioImagen {
+  from {
+    background-image: url('../img/dia_pijama2.png');
+
+  }
+
+  to {
+    background-image: url('../img/dia_pijama3.png');
+  }
+}
+
+.imagen-grande p,
+.imagen-grande a {
+  background-color: transparent;
+  color: var(--main-light-blue-color);
+  color: rgba(24, 70, 116, 255); /*ie11*/
+  text-shadow: 0 0 3px var(--main-dark-color);
+  text-shadow: 0 0 3px rgba(24, 70, 116, 255); /*ie11*/
+  padding: 1rem;
+}
+
+.imagen-grande span{
+  display: none;
+}
+
+.fuente {
+  width: 50vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .imagen-grande {
+    display: -ms-flexbox; /*ie11*/
+    display: flex;
+    -ms-flex-align: start; /*ie11*/
+    align-items: flex-start;
+    -ms-flex-pack: end; /*ie11*/
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    width: 80vw;
+    height: 30vh;
+
+  }
+
+  @keyframes cambioImagen {
+    from {
+      background-image: url('../img/dia_pijama2_lowres.png');
+
+    }
+
+    to {
+      background-image: url('../img/dia_pijama3_lowres.png');
+    }
+  }
+
+}
