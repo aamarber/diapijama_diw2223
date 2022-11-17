@@ -30,7 +30,9 @@
         `<a href='${url}'>
             <img src='${url + '/screenshot.png'}' alt='Captura de pantalla de la web de ${web.author}'/>
         </a>
-        <h3>${web.author}</h3>`;
+        <h3>${web.author}</h3>
+        <a href='${url}' class='button'>Visítala</a>`
+        ;
 
         const webListElement = document.getElementById('web-list');
 
