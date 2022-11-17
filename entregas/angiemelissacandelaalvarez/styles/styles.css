@@ -1,0 +1,343 @@
+/****** GLOBAL ****/
+:root {
+    --main-color: hsla(4.39,69.49%,53.73%,1);
+    --secondary-color: rgb(49, 49, 49);
+    --transparent-main-color:rgba(219, 66, 55, 0.055);
+    --second-color: hsla(5,82.35%,60%,1);
+    --third-color: hsla(6.84,100%,69.02%,1);
+    --light-color: hsla(7.92,100%,71.76%,1);
+    --dark-color: hsla(0,100%,25.49%,1);
+    --white-color: rgb(245, 245, 245);
+    font-family: 'Roboto', 'Helvetica', 'Verdana';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: 1.5s show forwards;
+}
+
+
+/****** CABECERA *******/
+.top-header{
+    margin-top: 10rem;
+}
+
+.image-background {
+    margin-top: 0;
+    height: 100vh;
+    background-image: url("media/dinosaurio.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 3px solid var(--second-color);
+}
+
+/*navegador*/
+.top-nav{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*logo*/
+.top-nav__logo{
+    width: 20%;
+}
+
+.top-nav__logo a img{
+    display: flex;
+    align-items: flex-end;
+}
+
+.top-nav__logo a img{
+    width: 100%;
+    max-width: 80px;
+}
+
+/*menu*/
+.top-nav__menu{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-nav__menu-list{
+    background-color: var(--third-color);
+    position: absolute;
+    z-index: 1;
+    top: max(11vw, 80px);
+    width: 100%;
+    left: 100%;
+}
+
+.top-nav__menu-list ul{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav__menu-list ul li{
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+.top-nav__menu-list ul li:hover, .top-nav__menu-list ul li:active{
+    background-color: var(--second-color); 
+}
+
+.top-nav__menu-list ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+/*titulo*/
+.title {
+    text-align: center;
+    transform: translateY(10rem);
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.712);
+}
+
+.title h1 {
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    animation: 1.5s slide forwards;
+}
+
+.title span {
+    font-size: 1.1rem;
+    color: var(--second-color);
+    display: block;
+    animation: 1.5s slide-reverse forwards;
+}
+
+
+
+/****** CONTENIDO *******/
+.content {
+    box-sizing: border-box;
+    margin-bottom: 10rem;
+}
+.content__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.content .content__info div{
+    width: min(100%, 500px);
+    margin: 1rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 1rem;
+    transition: box-shadow .5s;
+}
+
+.content .content__info div:hover{
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.5);
+    cursor: pointer;
+
+}
+
+.content .content__info div p{
+    text-align: center;
+    line-height: 1.6rem;
+    color: var(--secondary-color);
+}
+
+.content__info div span{
+    font-size: 12px;
+
+}
+
+.content .content__info div h4{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.orange-target{
+    background-color: var(--third-color);
+}
+
+.orange-target_h4 {
+    color: var(--white-color);
+}
+
+.white-target_h4 {
+    color: var(--third-color);
+}
+
+.content__button {
+    text-align: center;
+    margin: 5rem 0 ;
+}
+
+.content__button button{
+    background-color: var(--second-color);
+    border-radius: 2px;
+    border: none;
+    padding: 1rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.content__button button a{
+    text-decoration: none;
+    color:var(--white-color)
+}
+
+.content__button button:hover, .content__button button:active{
+    background-color: var(--main-color);
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+}
+
+/****** FOOTER *******/
+
+footer {
+    position: fixed;
+    width: 100%;
+    background-color: var(--second-color);
+    bottom: 0;
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 14px;
+    padding: .5rem;
+}
+
+footer div {
+    margin: .5rem 0;
+}
+
+footer p{
+    padding: 0;
+    margin: 0;
+}
+
+footer span a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+footer div a {
+    text-decoration: none;
+    margin: 0 0.2rem;
+}
+
+footer div a svg:hover, footer div a svg:active {
+    opacity: 0.8;
+}
+
+footer div a:hover, footer div a:active {
+    color: black;
+}
+
+/****** ANIMACIONES *******/
+
+/*inicio*/
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/*menu popup*/
+@keyframes open-menu {
+    from {
+        left: 100%;
+        opacity: 0;
+    }
+
+    to {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes close-menu {
+    from {
+        left: 0;
+        opacity: 1;
+    }
+
+    to {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+/*titulo*/
+@keyframes slide {
+    from {
+        transform: translateY(-50%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-reverse {
+    from {
+        transform: translateY(50%);
+    }
+
+    to {
+        transform: translateY(-50%);
+    }
+}
+
+
+/********* MEDIA QUERYS **********/
+
+@media only screen and (min-width: 920px) {
+    
+    /****** CABECERA *******/
+
+    /*menu*/
+    .top-nav__menu-icon {
+        display: none;
+    }
+    .top-nav__menu-list{
+        background-color: white;
+        position: static;
+    }
+
+    .top-nav__menu-list ul{
+        text-align: right;
+    }
+
+    .top-nav__menu-list ul li{
+        padding: 0 1.5rem;
+        display: inline;
+    }
+
+    .top-nav__menu-list ul li a{
+        color: var(--secondary-color);
+    }
+
+    /*titulo*/
+    .title h1{ font-size: 36px;}
+
+}
+

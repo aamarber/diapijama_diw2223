@@ -1,0 +1,38 @@
+/****** GLOBAL ****/
+:root {
+    --main-color: hsla(4.39,69.49%,53.73%,1);
+    --secondary-color: rgb(49, 49, 49);
+    --transparent-main-color:rgba(219, 66, 55, 0.055);
+    --second-color: hsla(5,82.35%,60%,1);
+    --third-color: hsla(6.84,100%,69.02%,1);
+    --light-color: hsla(7.92,100%,71.76%,1);
+    --dark-color: hsla(0,100%,25.49%,1);
+    --white-color: rgb(245, 245, 245);
+    font-family: 'Roboto', 'Helvetica', 'Verdana';
+}
+
+.title {
+    transform: translateY(-3rem);
+}
+
+.content__video video{
+    width: 100%;
+}
+
+.proceso {
+    background-color: var(--transparent-main-color);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.proceso h2, .proceso p{
+    text-align: center;
+}
+
+.proceso ol {
+    margin: min(5%, 200px);
+}
+
+.proceso ol li{
+    margin: 2rem 0;
+}

@@ -1,0 +1,43 @@
+/****** GLOBAL ****/
+:root {
+    --main-color: hsla(4.39,69.49%,53.73%,1);
+    --secondary-color: rgb(49, 49, 49);
+    --transparent-main-color:rgba(219, 66, 55, 0.055);
+    --second-color: hsla(5,82.35%,60%,1);
+    --third-color: hsla(6.84,100%,69.02%,1);
+    --light-color: hsla(7.92,100%,71.76%,1);
+    --dark-color: hsla(0,100%,25.49%,1);
+    --white-color: rgb(245, 245, 245);
+    font-family: 'Roboto', 'Helvetica', 'Verdana';
+}
+
+.title {
+    transform: translateY(-3rem);
+}
+
+.enunciado{
+    text-align: center;
+    padding: 2rem;
+    width: 80%;
+    margin: 0 10% 5% 10%;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.2);
+}
+
+.ubicaciones{
+    margin-top: 10rem;
+}
+
+.ubicaciones h2{
+    text-align: center;
+}
+
+.ubicaciones img{
+    width: 100%;
+}
+
+.proyectos {
+    text-align: center;
+    padding-top: 2rem;
+    width: 80%;
+    margin: 0 10% 5% 10%;
+}

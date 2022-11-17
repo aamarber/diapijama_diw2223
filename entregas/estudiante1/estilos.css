@@ -1,0 +1,343 @@
+.menu {
+    padding: 0;
+}
+
+.opcion {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: green;
+    display: block;
+    padding: 14px;
+    font-size: 20px;
+    color: white;
+}
+
+.menu a:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu.flex {
+    display: flex;
+    /*justify-content: flex-end;*/
+    justify-content: center;
+}
+
+
+/*foto de inicio*/
+.acogido{
+    justify-content: center;
+    margin: auto;
+    display: block;
+    width: 1400px;
+    height: 600px;
+}
+
+.acogido:hover{
+    opacity:calc(90%);
+}
+
+/* texto pagina 1*/
+
+.pijama a {
+    text-decoration: none;
+    color: green;
+}
+
+.pijama p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.pijama{
+    text-align: justify;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pijama img{
+    width: 800px;
+    height: 500px;
+}
+
+.pijama .pulo{
+    width: 300px;
+    height: 300px;
+    float: right;
+    margin: 30px;
+    border-radius: 30px;
+}
+
+.cajas h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: green;
+}
+
+.cajas a {
+    text-decoration: none;
+}
+
+.cajas img{
+    width: 350px;
+    height: 500px;
+    box-shadow: 5px 5px 30px black;
+    border-radius: 20px;
+}
+
+.cajas img:hover{
+    transform: scale(1.2);
+}
+
+.caja3 img{
+    width: 450px;
+    height: 450px;
+}
+
+.caja4 img{
+    width: 350px;
+    height: 450px;
+}
+
+.caja1, .caja2, .caja3, .caja4{
+    display:inline-block; 
+    text-align: center;
+    justify-content: center;
+    padding-left: 300px;
+    
+}
+
+.caja2  {
+    padding-left: 400px;
+}
+
+/*pagina 2*/
+.foto2{
+    float: right;
+    width: 600px;
+    height: 400px;
+    margin: 0 0 10px 10px;
+    border-radius: 20px;
+}
+
+.foto2_1 {
+    float: left;
+    width: 500px;
+    height: 300px;
+    margin: 10px 10px 0 0;
+    border-radius: 20px;
+}
+
+.page2 p {
+    text-align:justify;
+    font-size: 30px;
+    font-style: arial;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.page2 {
+    animation-duration: 5s;
+    animation-name: transacao;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+@keyframes transacao {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/*pagina3*/
+
+.texto a {
+    text-decoration: none;
+    color: green;
+}
+
+.texto p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.texto{
+    text-align: justify;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+/*Pagina 4*/
+
+form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border:  1px solid #ccc;
+    border-radius: 1em;
+    background-color:cadetblue;
+}
+
+.contenedor{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+}
+
+form input {
+    padding-top: 3px;
+}
+
+.contenedor h1{
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color:beige;
+}
+
+form span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* animacion*/
+.loader {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loader,
+.loader:before,
+.loader:after {
+    background: cadetblue;
+    -webkit-animation: load1 1s infinite ease-in-out;
+    animation: load1 1s infinite ease-in-out;
+    width: 1em;
+    height: 2em;
+}
+
+.loader {
+    color: green;
+    font-size: 2vw;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+    position: absolute;
+    top: 0;
+    content: '';
+}
+
+.loader:before {
+    left: -1.5em;
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.loader:after {
+    left: 1.5em;
+}
+
+@-webkit-keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}
+
+@keyframes load1 {
+    0%,
+    80%,
+    100% {
+        box-shadow: 0 0;
+        height: 4em;
+    }
+    40% {
+        box-shadow: 0 -2em;
+        height: 5em;
+    }
+}
+
+/*Pagina 5*/
+
+header{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: green;
+}
+
+.galeria{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vm;
+}
+
+.item{
+    width: 340px;
+    height: 200px;
+    border: 10px solid #fff;
+    box-shadow: 5px 5px 5px #002;
+    flex-flow: 1;
+}
+
+.item:hover{
+    transform: scale(1.3);
+}
+
+.item img{
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+footer{
+    height: 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #000 ;
+    font-family: italic;
+}
+
+
+
+
+
+
+

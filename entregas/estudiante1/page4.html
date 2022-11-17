@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Registrarse</title>
+</head>
+<body>
+    <div class="menu flex">
+        <div class="opcion"><a href="./index.html">Home</a></div>
+        <div class="opcion"><a href="./pagina2.html">¿Quien somos?</a></div>
+        <div class="opcion"><a href="./page3.html">Tipos de acogida</a></div>
+        <div class="opcion"><a href="./page4.html">Registrarse</a></div>
+        <div class="opcion"><a href="./page5.html">Galeria</a></div>
+    </div>
+    <br>
+    <div class="loader"></div>
+    <div class="contenedor">
+        <h1>Cambiamos el mundo juntos</h1>
+        <br>
+        <form action="formulario" method="post">
+            <span>Nombre:</span>
+            <input type="text" name="nombre" class="nombre"> <br><br>
+            <span>Apellido:</span>
+            <input type="text" name="apellido" class="apellido"><br><br>
+            <span>Email:</span>
+            <input type="email" name="" id=""> <br><br>
+            <span>Contraseña:</span>
+            <input type="password" name="password" class="password"> <br><br>
+            <span>Seleccione tipo de acogida:</span>
+            <select name="select" class="selecionar">
+                <option value="null"></option>
+                <option value="urgente">Familiar Urgente</option>
+                <option value="temporal">Familiar Temporal</option>
+                <option value="permanente">Familiar Permanente</option>
+            </select> <br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+</html>
