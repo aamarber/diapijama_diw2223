@@ -1,0 +1,14 @@
+.encabezado p{
+    padding: 2em;
+}
+
+.contenedor-informacion,
+.contenedor-requisitos{
+    width: 95%;
+    margin: 0 20px;
+}
+
+.titulo-acoge,
+.subtitulo-acoge{
+    color: #F49819;
+}

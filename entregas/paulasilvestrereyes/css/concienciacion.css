@@ -1,0 +1,40 @@
+.bgconcienciacion {
+  background-image: url('img/background-concienciacion.png');
+}
+
+.scroll {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 20% 52%;
+  background-size: 120%;
+  height: 350px;
+  margin: 0 20px;
+}
+
+p {
+  color: var(--tertiary-color);
+}
+
+a {
+  color: var(--tertiary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+footer p {
+  color: var(--quaternary-color);
+}
+
+@media (max-width: 1200px) {
+  .scroll {
+    background-size: 100%;
+    background-attachment: inherit;
+  }
+}
+@media (max-width: 1590px) {
+  .scroll {
+    background-size: 170%;
+  }
+}

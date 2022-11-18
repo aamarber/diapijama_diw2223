@@ -1,0 +1,104 @@
+.exp-familias {
+  display: flex;
+  justify-items: stretch;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.family img {
+  height: 300px;
+  filter: grayscale(100%);
+}
+
+.family {
+  position: relative;
+  border: 5px solid var(--quaternary-color);
+  height: 50%;
+  width: 45%;
+  overflow: hidden;
+  margin: 1%;
+}
+
+.family p {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  visibility: hidden;
+  padding: 5px;
+}
+
+.family:hover img {
+  opacity: 0.2;
+  filter: grayscale(0%);
+  transition-duration: 3s;
+  -ms-transition-duration: 3s;
+  transform: scale(120%);
+  -ms-transform: scale(120%);
+}
+
+.family:hover {
+  box-shadow: 5px 5px 3px var(--tertiary-color);
+}
+
+.family:hover p {
+  visibility: visible;
+  transition-delay: 1s;
+  transition-duration: 3s;
+  animation: rotarTexto 3s;
+}
+
+@media (max-width: 980px) {
+  .family p {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 600px) {
+  .exp-familias {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+  }
+
+  .family {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+    margin: 0 auto;
+    width: 75%;
+    height: auto;
+    transform: none;
+    transition: none;
+    animation: none;
+    background-color: var(--quaternary-color);
+    margin-bottom: 25px;
+    overflow: hidden;
+  }
+
+  .family:hover img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+  }
+
+  .family img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(0%);
+  }
+
+  .family p {
+    display: block;
+    position: relative;
+    visibility: visible;
+    width: 80%;
+    margin: 0 auto;
+    font-size: x-small;
+    text-align: initial;
+    left: 0;
+  }
+}

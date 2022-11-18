@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="../media/images/favicon.ico">
+  <link rel="stylesheet" href="../css/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  <script src="../js/menu_script.js"></script>
+  <title>Dia del Pijama - Acogimiento</title>
+</head>
+<body>
+  <header>
+    <div class="header-container row">
+      <div class="col-mb-2">
+        <a class="icons icons-header heart-icon" href="index.html" role="button" tabindex="0"  aria-label="Abre Inicio"></a>
+      </div>
+      <nav role="navigation" class="col-mb-8" aria-label="menu superior">
+        <ul id="menu" class="menu-collapsible menu-animation">
+          <li class="menu-item"><a href="index.html" role="button" tabindex="0"  aria-label="Abre Inicio">Inicio</a></li>
+          <li class="menu-item"><a href="diaDelPijama.html" role="button" tabindex="0"  aria-label="Abre Día del Pijama">Día del Pijama</a></li>
+          <li class="menu-item"><a href="acogimientoFamiliar.html" role="button" tabindex="0"  aria-label="Abre Acogimiento Familiar">Acogimiento Familiar</a></li>
+          <li class="menu-item"><a href="asociaciones.html" role="button" tabindex="0"  aria-label="Abre Asociaciones">Asociaciones</a></li>
+          <li class="menu-item"><a href="contacto.html" class="menu-selected" role="button" tabindex="0"  aria-label="Abre Contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="col-mb-2 flex h-right">
+        <div id="menu-icon">
+          <a class="icons icons-header bars-icon" href="#" role="button" tabindex="0"  aria-label="Abre Inicio"></a>
+        </div>
+      </div>
+      <div id="back-cover"></div>
+    </div>
+    <div class="header-gap"></div>
+  </header>
+  <main class="row">
+    <section role="contentinfo" aria-label="Sección de Información" class="col-mb-12 flex section-full">
+      <article class="mb-100 pc-33 picture pic8">
+      </article>
+      <article class="mb-100 pc-33">
+        <h2 class="h2-mb h2-pc">Contáctanos</h2> 
+        <p class="parr-art-mb parr-art-pc">
+          Déjanos tus datos y nos pondremos en contacto contigo
+        </p> <br>
+        <form action="" class="parr-art-mb parr-art-pc">
+          <label for="nombre">Nombre </label>
+          <input class="validity" type="text" name="nombre" id="nombre" minlength="2" maxlength="128" pattern="[a-zA-Z]{2,50}" required>
+          <label for="email">Email</label>
+          <input class="validity" type="text" name="email" id="email" pattern="[a-zA-Z0-9]{5,30}@[a-zA-Z0-9]{2,10}.(es|com|org)" required>
+          <label for="telefono">Teléfono </label>
+          <input class="validity" type="text" name="telefono" id="telefono" pattern="[0-9]{9}" required>
+          <label for="comunidad">Comunidad Autónoma</label>
+          <input class="validity" type="text" name="comunidad" id="comunidad" minlength="2" maxlength="128" pattern="[a-zA-Z]{2,50}" required>
+        </form>
+        <a href="acogimientoFamiliar.html" role="button" tabindex="0"  aria-label="Envia formulario"><button class="button btn-icon-send btn-left">Enviar</button></a>
+      </article>
+      <article class="mb-100 pc-33">
+        <h2 class="h2-mb h2-pc">Nuestra Dirección</h2> 
+        <p class="parr-art-mb parr-art-pc">
+          <ul>
+            <li>C/ SAAVEDRA FAJARDO, 5-7, BAJO, 28011, MADRID</li>
+            <li>aseaf@aseaf.org</li>
+            <li>622 458 775</li>
+          </ul>
+        </p> <br>
+        <iframe aria-label="Mapa de Google Maps" id="map" src="https://maps.google.com/maps?q=C/%20SAAVEDRA%20FAJARDO,%205-7,%20BAJO,%2028011,%20MADRID&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </article>
+    </section>
+  </main>
+  <footer class="row row-vertical-center">
+    <div class="col-mb-12">
+      <ul>
+        <li><a class="icons icon-facebook" href="https://es-es.facebook.com/" role="button" tabindex="0"  aria-label="Accede a Facebook"></a></li>
+        <li><a class="icons icon-twitter" href="https://twitter.com/?lang=es" role="button" tabindex="0"  aria-label="Accede a Twitter"></a></li>
+        <li><a class="icons icon-instagram" href="https://www.instagram.com/" role="button" tabindex="0"  aria-label="Accede a Instagram"></a></li>
+        <li><a class="icons icon-youtube" href="https://www.youtube.com/" role="button" tabindex="0"  aria-label="Accede a Youtube"></a></li>
+      </ul>
+    </div>
+    <span class="grid-right text-footer-mb text-footer-pc"><a href="">@gettyimages</a> Copyright © 2022</span>
+  </footer>
+</body>
+</html>

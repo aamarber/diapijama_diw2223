@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+
+    --nav-height: 100px;
+    --footer-height: 50px;
+    --header-height: 350px;
+
+    --size-max-height: calc(100vh - 100px - 50px);
+
+    --img-bg-logo: url("../img/logo-2.png");
+    --img-bg-child-pajamas: url("../img/childrens-pajamas-4.png");
+    --img-bg-logo-instagram: url("../img/instagram.svg");
+    --img-bg-logo-facebook: url("../img/facebook.svg");
+    --img-bg-logo-twitter: url("../img/twitter.svg");
+    --img-bg-logo-youtube: url("../img/youtube.svg");
+    --img-bg-sticker: url("../img/sticker.svg");
+
+    --nav-bg-color: #ff66d4;
+    --nav-text-color: #FFEB80;
+    --nav-a-hover-color: #4DFDFF;
+    --banner-text-color: #ffffff;
+    --banner-bg-color: #f1630f;
+    --header-text-color: #FFEB80;
+    --color-1: #f2551d;
+    --color-2: #14aa76;
+    --color-3: #eaff30;
+    --color-4: #9bd671;
+    --color-5: #ffafaf;
+    --color-6: #f9f2e5;
+    --color-7: #77eae1;
+    --color-8: #5695eb;
+    --color-9: #dd6a27;
+    --color-black: #000;
+    --color-white: #fff;
+
+    --nav-a-fontSize: 1.25rem;
+    --h1-fontSize: 4rem;
+    --h2-fontSize: 2rem;
+    --h3-fontSize: 1.5rem;
+    --h4-fontSize: 1rem;
+    --p-fontSize: 1.25rem;
+    --li-fontSize: 1.25rem;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        'nav'
+        'header'
+        'main'
+        'footer';
+    grid-template-rows: 100px 350px auto 50px;
+    background-color: #ff66d4;
+}
+
+nav {
+    grid-area: nav;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    background-color: #fff;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-columns {
+    flex-direction: column;
+    -ms-flex-direction: column;
+}
+
+.img-bg-center {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.img-bg-child-pajamas {
+    background-image: url("../img/childrens-pajamas-4.png");
+}
+
+.section-header p {
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.vertical-line {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+
+.header-config {
+    width: 100%;
+    height: 100%;
+    background-color: #ff66d4;
+}
+
+.header-config div {
+    height: 100%;
+}
+
+.header-img {
+    height: 75%;
+    background-color: #FFEB80;
+    border-radius: 50%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #000;
+}
+
+a:hover {
+    color: #4DFDFF;
+}

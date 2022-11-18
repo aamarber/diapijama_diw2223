@@ -1,0 +1,745 @@
+/**********************************
+  ACTIVIDAD EVALUABLE (1ª Evaluación)
+  Diseño de Interfaces WEB
+  Desarrollo de Aplicaciones WEB
+***********************************/
+
+/**************
+  CONTENIDOS
+
+  $ 1. RESET
+  $ 2. VARIABLES GLOBALES
+  $ 3. GRID Y POSICIONAMIENTO
+  $ 4. ETIQUETAS
+  $ 5. CLASES COMUNES A TODAS LAS PÁGINAS
+    $ 5.1. HEADER
+    $ 5.2. FOOTER
+    $ 5.3. FUENTES: TAMAÑOS Y COLORES
+    $ 5.4. SECCIONES
+    $ 5.5. INPUTS
+    $ 5.6. BOTONES
+    $ 5.7. IMÁGENES E ICONOS
+    $ 5.8. OTROS
+  $ 6. CLASES PROPIAS DE CADA PÁGINA
+    $ 6.1. INICIO
+    $ 6.2. DIA DEL PIJAMA
+    $ 6.3. ACOGIMIENTO FAMILIAR
+    $ 6.4. ASOCIACIONES
+    $ 6.5. CONTACTO
+  $ 7. MEDIA QUERY
+***************/
+
+
+/*---------------------
+$ 1. RESET
+----------------------*/
+
+*, *::after, *::before, header { 
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/*---------------------
+$ 2. VARIABLES GLOBALES
+----------------------*/
+*{
+  --color-primary: rgb(44, 44, 44);
+  --color-secondary: #007233;
+  --color-action: #ff8a44;
+  --color-action-dark: #cf7039;
+  --color-text-light: white;
+  --color-text-dark: rgb(29, 29, 29);
+  --color-ok: rgb(11, 197, 20);
+  --color-nok: red;
+  --box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.315);
+  --color-bg-light: rgba(255, 255, 255, 0.5);
+  --color-bg-dark: rgba(0, 0, 0, 0.4);
+}
+
+
+/*---------------------
+$ 3. GRID & POSICIONAMIENTO
+----------------------*/
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col-mb-1 {
+  grid-column-start: span 1;
+}
+
+.col-mb-2 {
+  grid-column-start: span 2;
+}
+
+.col-mb-4 {
+  grid-column-start: span 4;
+}
+
+.col-mb-6 {
+  grid-column-start: span 6;
+}
+
+.col-mb-8 {
+  grid-column-start: span 8;
+}
+
+.col-mb-12 {
+  grid-column-start: span 12;
+}
+
+.grid-right {
+  grid-column-start: -1;
+}
+
+.mb-100 {
+  width: 100%;
+}
+
+.row-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.float-vertical-center {
+  position: relative;
+  top: 30%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.v-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.v-top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 40px;
+}
+
+.v-bottom {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-bottom: 40px;
+}
+
+.h-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.h-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.h-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*---------------------
+$ 4. ETIQUETAS
+----------------------*/
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+span {
+  font-size: inherit;
+}
+
+label {
+  font-size: inherit;
+}
+
+input {
+  display: block;
+  font-size: inherit;
+  font-family: 'Poppins', sans-serif;
+  margin: 5px 0px 30px 0px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--color-secondary);
+  padding: 8px 16px;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--color-text-light);
+  line-height: 40px;
+}
+
+header a:hover {
+  opacity: 0.8;
+}
+
+article {
+  width: 80%;
+  padding: 30px;
+}
+
+article ul li {
+  font-size: inherit;
+  padding-left: 20px;
+  list-style-position: inside;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  color: var(--color-text-light);
+  padding: 10px 20px;
+}
+
+footer ul li {
+  display: inline-block;
+  line-height: 50px;
+}
+
+footer a {
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  padding: 5px 15px;
+}
+
+
+/*---------------------
+$ 5. CLASES COMUNES A TODAS LAS PÁGINAS
+----------------------*/
+
+/*---------------------
+  $ 5.1 HEADER
+----------------------*/
+.header-container {
+  background-color: var(--color-primary);
+  padding: 7px;
+  width: 100%;
+  height: 5vh;
+  position: fixed;
+  top: 0;
+  z-index: 60;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.menu-selected {
+  text-decoration: underline;
+  color: var(--color-action);
+}
+
+.header-gap {
+  height: 5vh;
+}
+
+.icons-header {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.bars-icon {
+  background-image: url('../media/images/icon-menu.svg');
+  position: relative;
+  z-index: 30;
+}
+
+.heart-icon {
+  background-image: url('../media/images/icon-heart.svg');
+}
+
+#menu-icon{
+  display: inline-block;
+}
+
+.menu-collapsible {
+  position: absolute;
+  top: 5vh;
+  left: -300px;
+  background-color: var(--color-primary);
+  padding: 30px 0px;
+}
+
+.menu-shown {
+  display: block;
+  position: absolute;
+  top: 5vh;
+  left: 0%;
+  z-index: 50;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+}
+
+.menu-item {
+  display: block;
+  position: relative;
+  padding: 5px 20px;
+  left: 0%;
+}
+
+.menu-animation {
+  -webkit-transition: left 0.5s;
+  -o-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+#back-cover {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 5vh;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  -webkit-transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  display: none;
+}
+
+.back-cover-display {
+  opacity: 1 !important;
+  display: block !important;
+}
+
+
+/*---------------------
+  $ 5.2 FOOTER
+----------------------*/
+.text-footer-mb {
+  font-size: 0.8em;
+}
+
+
+/*---------------------
+  $ 5.3 FUENTES: TAMAÑOS Y COLORES
+----------------------*/
+
+.h1-mb {
+  font-size: 2.5em;
+  font-weight: bolder;
+}
+
+.h2-mb {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.h3-mb {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.parr-pic-mb{
+  font-size: 1.2em;
+}
+
+.parr-art-mb{
+  font-size: .95em;
+}
+
+.text-dark {
+  color: var(--color-text-dark);
+}
+
+.text-light {
+  color: var(--color-text-light);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+  font-weight: bolder;
+}
+
+.text-bold {
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.bg-dark {
+  background-color: var(--color-bg-dark);
+}
+
+.bg-light {
+  background-color: var(--color-bg-light);
+}
+
+
+/*---------------------
+  $ 5.4 SECCIONES
+----------------------*/
+
+.section-full-ini {
+  min-height: 95vh;
+}
+
+.section-full {
+  min-height: 88vh;
+}
+
+.section-half {
+  min-height: 50vh;
+}
+
+
+/*---------------------
+  $ 5.5 INPUTS
+----------------------*/
+
+.validity:valid{
+  border: 2px solid var(--color-ok);
+}
+
+
+/*---------------------
+  $ 5.6 BOTONES
+----------------------*/
+
+.button {
+  float: right;
+  min-width: 160px;
+  min-height: 48px;
+  padding-left: 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-light);
+}
+
+.button:hover {
+  background-color: var(--color-action-dark);
+}
+
+.btn-icon-arrow {
+  background: var(--color-action) url('../media/images/icons_arrow.png') no-repeat;
+  background-size: contain;
+}
+
+.btn-icon-down {
+  background: var(--color-action) url('../media/images/icons_down.png') no-repeat;
+  background-size: contain;
+}
+
+.btn-icon-send {
+  background: var(--color-action) url('../media/images/icons_send.png') no-repeat;
+  background-size: contain;
+}
+
+.btn-icon-external {
+  background: var(--color-action) url('../media/images/icons_external_link.png') no-repeat;
+  background-size: contain;
+}
+
+.btn-icon-play {
+  background: var(--color-action) url('../media/images/icons_play.png') no-repeat;
+  background-size: contain;
+  min-width: 60px;
+  min-height: 60px;
+  margin-top: 0px;
+  border: 3px solid rgba(0, 0, 0, 0.438);
+}
+
+.icons {
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+
+.icons:hover {
+  opacity: 0.5;
+} 
+
+.icon-facebook {
+  background-image: url('../media/images/icon-facebook-white.svg');
+}
+
+.icon-twitter {
+  background-image: url('../media/images/icon-twitter-white.svg');
+}
+
+.icon-instagram {
+  background-image: url('../media/images/icon-instagram-white.svg');
+}
+
+.icon-youtube {
+  background-image: url('../media/images/icon-youtube-white.svg');
+}
+
+
+/*---------------------
+  $ 5.7 IMÁGENES E ICONOS
+----------------------*/
+
+.picture {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+/*---------------------
+  $ 5.8. OTROS
+----------------------*/
+
+.gap {
+  float: left;
+  height: 5px;
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+.title-loose {
+  padding: 30px;
+}
+
+
+/*---------------------
+$ 6. CLASES PROPIAS DE CADA PÁGINA
+----------------------*/
+
+/*---------------------
+  $ 6.1. INICIO (index.html)
+----------------------*/
+
+.pic1 {
+  background-image: url('../media/images/pic1.jpg');
+}
+
+.pic2 {
+  background-image: url('../media/images/pic2.jpg');
+}
+
+.pic3 {
+  background-image: url('../media/images/pic3.jpg');
+}
+
+
+/*---------------------
+  $ 6.2. DIA DEL PIJAMA (diaDelPijama.html)
+----------------------*/
+
+.pic5 {
+  background-image: url('../media/images/pic5.jpg');
+}
+
+.pic6 {
+  background-image: url('../media/images/pic6.jpg');
+}
+
+.picture-cont {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.bg-animation-mb {
+  position:absolute;
+  top: 5vh;
+  height: 50vh;
+  width: 100%;
+  -webkit-animation: bgScale linear 10s 1;
+          animation: bgScale linear 10s 1;
+}
+
+@-webkit-keyframes bgScale {
+  0%{background-size: 220%;}
+  50%{background-size: 230%;}
+  100%{background-size: 220%;}
+}
+
+@keyframes bgScale {
+  0%{background-size: 220%;}
+  50%{background-size: 230%;}
+  100%{background-size: 220%;}
+}
+
+.pos-relative {
+  position: relative;
+  z-index: 40;
+}
+
+
+/*---------------------
+  $ 6.3. ACOGIMIENTO FAMILIAR (acogimientoFamiliar.html)
+----------------------*/
+
+.pic4 {
+  background-image: url('../media/images/pic4.jpg');
+}
+
+.tv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid var(--color-secondary);
+  border-radius: 5px;
+  background-image: url('../media/video/tv.png');
+  width: 80%;
+  height: 80%;
+  margin: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+
+/*---------------------
+  $ 6.4. ASOCIACIONES (asociaciones.html)
+----------------------*/
+
+.asociacion-datos {
+  width: 100%;
+  margin: 30px 50px;
+}
+
+.pic7 {
+  background-image: url('../media/images/asociations.jpg');
+}
+
+
+/*---------------------
+  $ 6.5. CONTACTO (contacto.html)
+----------------------*/
+
+.pic8 {
+  background-image: url('../media/images/contact.jpg');
+}
+
+#map{
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+}
+
+.btn-left {
+  float: left;
+}
+
+/*---------------------
+$ 7. MEDIA QUERY
+----------------------*/
+
+@media only screen and (min-width: 480px) {
+
+  #menu-icon{
+    display: none;
+  }
+
+  .menu-item {
+    display: inline-block;
+    padding: 0 20px;
+  }
+
+  .menu-collapsible{
+    text-align: center;
+    background-color: transparent;
+    top: -10vh;
+    right: -50%;
+    padding: 0px 0px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .back-cover-display {
+    opacity: 0 !important;
+    display: none !important;
+  }
+
+  .col-pc-12 {
+    grid-column-start: span 12;
+  }
+  
+  .col-pc-3 {
+    grid-column-start: span 4;
+  }
+
+  .pc-33 {
+    width: calc(100%/3);
+  }
+
+  .pc-66 {
+    width: calc((100%/3)*2);
+  }
+
+  .h1-pc {
+    font-size: 4em;
+    font-weight: bolder;
+  }
+
+  .h2-pc {
+    font-size: 2.1em;
+    font-weight: bold;
+  }
+
+  .h3-pc {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .parr-pic-pc {
+    font-size: 1.6em;
+  }
+
+  .parr-art-pc {
+    font-size: 1.1em;
+  }
+
+  .text-footer-pc {
+    font-size: 1em;
+  }
+
+  footer a {
+    padding: 5px 25px;
+  }
+
+  .bg-animation-pc {
+    position:absolute;
+    top: 5vh;
+    height: 50vh;
+    width: 100%;
+    -webkit-animation: bgScale linear 10s 1;
+            animation: bgScale linear 10s 1;
+  }
+  
+  @-webkit-keyframes bgScale {
+    0%{background-size: 100%;}
+    50%{background-size: 105%;}
+    100%{background-size: 100%;}
+  }
+  
+  @keyframes bgScale {
+    0%{background-size: 100%;}
+    50%{background-size: 105%;}
+    100%{background-size: 100%;}
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .menu-collapsible{
+    top: 0vh;
+  }
+}

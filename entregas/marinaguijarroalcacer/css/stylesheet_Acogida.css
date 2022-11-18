@@ -1,0 +1,39 @@
+/* ACOGIDA */
+.acogida {
+    padding-top: 130px;
+    padding-left: 15px;
+}
+
+.acogida > div {
+    padding: 0 25px;
+}
+
+.lista {
+    list-style-type: none;
+    font-size: 1em;
+}
+
+.lista li::first-letter {
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-right: 2px;
+}
+
+
+/* RESPONSIVE */
+
+/* Para móviles y dispositivos intermedios */
+@media (max-width: 1024px) {
+    .acogida > div {
+        padding: 0 15px;
+    }
+
+    .lista {
+        text-align: justify;
+        margin: 0 15px;
+    }
+
+    .lista {
+        padding-left: 10px;
+    }
+}

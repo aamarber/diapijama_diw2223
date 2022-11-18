@@ -1,0 +1,43 @@
+.portada{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contador{
+    width: 90%;
+    background-color: #F49819;
+    border-radius: 10px;
+	text-align: center;
+	background-size: cover;
+	background-position: center center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+}
+
+.contenedor-imagen-bienvenida{
+    width: 100vw;
+    max-width: 1400px;
+    min-width: 250px;
+    margin: auto;
+    padding: auto;
+}
+
+.imagen-bienvenida{
+    width: 100%;
+}
+
+.contador-texto h3 {
+    color: #1E335D;
+    padding-top: 20px;
+    font-size: 2rem;
+}
+
+#numero{
+    color: #1E335D;
+}

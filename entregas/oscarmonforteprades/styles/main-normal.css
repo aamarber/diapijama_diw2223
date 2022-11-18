@@ -1,0 +1,169 @@
+#main-normal {
+    width: 100%;
+    min-height: calc(100vh - 100px - 50px);
+    position: relative;
+    align-items: flex-start;
+    background-color: #fff;
+}
+
+#main-normal div {
+    min-height: calc(100vh - 100px - 50px);
+    width: 100%;
+}
+
+#main-normal section {
+    padding: 20px 15%;
+    width: 100%;
+}
+
+#main-normal h2 {
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+}
+
+#main-normal p {
+    font-size: 1.25rem;
+    margin: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#main-normal a {
+    color: #fff;
+}
+
+#main-normal a:hover {
+    color: #4DFDFF;
+}
+
+#main-normal section li {
+    font-size: 1.25rem;
+    list-style-position: inside;
+    margin: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#main-normal div.section-header {
+    width: 7%;
+    position: sticky;
+    height: calc(100vh - 100px - 50px);   
+    top: 100px;
+    left: 0;
+    border-right: 1px solid #000;
+    justify-content: space-between;
+}
+
+#main-index {
+    background-color: #f2551d;
+}
+
+#main-nosotros {
+    background-color: #9bd671;
+}
+
+#main-acogimiento {
+    background-color: #14aa76;
+}
+
+#main-colabora {
+    background-color: #5695eb;
+}
+
+#main-referencias {
+    background-color: #ffafaf;
+}
+
+#main-inscripcion {
+    background-color: #ffafaf;
+}
+
+#main-normal section.separator-up,
+#main-normal section.separator-down {
+    width: 100%;
+    height: 100px;
+}
+
+#main-normal section.separator-up.separator-index {
+    background: linear-gradient(to left bottom, #fff 49%, #f2551d 50%);
+}
+
+#main-normal section.separator-down.separator-index {
+    background: linear-gradient(to left bottom, #f2551d 49%, #fff 50%);
+}
+
+#main-normal section.separator-index {
+    background-color: #f2551d;
+    color: #fff;
+}
+
+#main-normal section.separator-up.separator-nosotros {
+    background: linear-gradient(to left bottom, #fff 49%, #9bd671 50%);
+}
+
+#main-normal section.separator-down.separator-nosotros {
+    background: linear-gradient(to left bottom, #9bd671 49%, #fff 50%);
+}
+
+#main-normal section.separator-nosotros {
+    background-color: #9bd671;
+    color: #fff;
+}
+
+#main-normal section.separator-up.separator-acogimiento {
+    background: linear-gradient(to right bottom, #fff 49%, #14aa76 50%);
+}
+
+#main-normal section.separator-down.separator-acogimiento {
+    background: linear-gradient(to right bottom, #14aa76 49%, #fff 50%);
+}
+
+#main-normal section.separator-acogimiento {
+    background-color: #14aa76;
+    color: #fff;
+}
+
+#main-normal section.separator-up.separator-colabora {
+    background: linear-gradient(to right bottom, #fff 49%, #5695eb 50%);
+}
+
+#main-normal section.separator-down.separator-colabora {
+    background: linear-gradient(to right bottom, #5695eb 49%, #fff 50%);
+}
+
+#main-normal section.separator-colabora {
+    background-color: #5695eb;
+    color: #fff;
+}
+
+#main-normal section.separator-up.separator-referencias {
+    background: linear-gradient(to left bottom, #fff 49%, #ffafaf 50%);
+}
+
+#main-normal section.separator-down.separator-referencias {
+    background: linear-gradient(to left bottom, #ffafaf 49%, #fff 50%);
+}
+
+#main-normal section.separator-referencias {
+    background-color: #ffafaf;
+    color: #fff;
+}
+
+#main-normal #child-pajamas-1 {
+    width: 300px;
+    min-height: 200px;
+    background-position: top 0 left 0;
+}
+
+#main-normal #child-pajamas-2 {
+    width: 300px;
+    min-height: 225px;
+    background-position: bottom 0 left 0;
+}
+
+#main-normal #child-pajamas-3 {
+    width: 300px;
+    min-height: 200px;
+    background-position: top 0 right -140px;
+}

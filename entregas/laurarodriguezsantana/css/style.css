@@ -1,0 +1,26 @@
+@import url("../css/index.css");
+@import url("../css/eventos.css");
+@import url("../css/colabora.css");
+@import url("../css/historia.css");
+@import url("../css/blog.css");
+@import url("../css/acoge.css");
+@import url("../css/quienes-somos.css");
+@import url("../css/contacto.css");
+@import url("../css/menu.css");
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+  
+footer {
+	padding: 10px 10px;
+
+}
+
+

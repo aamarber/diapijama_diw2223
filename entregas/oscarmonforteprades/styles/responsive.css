@@ -1,0 +1,37 @@
+@media screen and (max-width: 900px) {
+
+    nav li:nth-child(odd),
+    header #header-father,
+    header #header-mather {
+        display: none;
+    }
+
+    nav li:nth-child(even) {
+        display: inline;
+    }
+
+    nav li {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    footer li a {
+        height: 20px;
+        width: 20px;
+    }
+
+    * {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    * {
+        font-size: 12px;
+    }
+
+    nav img {
+        width: 20px;
+    }
+}

@@ -1,0 +1,131 @@
+/* INICIO */
+#lema {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    background-color: var(--gris-claro);
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+#texto-lema {
+    float: left;
+    padding: 55px 70px 120px 35px;
+    font-size: 3.45em;
+    width: 50%;
+}
+
+#cuento-cama {
+    height: 340px;
+    width: 500px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+
+/* LINKS */
+/* #titulo-links {
+    z-index: 4;
+    position: relative;
+    font-size: 3.7em;
+    padding: 20px 0 0 40px;
+    margin: 0;
+} */
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.link div img {
+    height: auto;
+    width: 350px;
+    opacity: 1;
+    border: 8px solid var(--gris-medio);
+    transition: transform 0.5s linear;
+    
+}
+
+.link div img:hover {
+    opacity: 0.6;
+    transform: scale(1.04,1.04);
+}
+
+
+/* RESPONSIVE */
+
+/* Para móviles */
+@media (max-width: 480px) {
+    #texto-lema { 
+        font-size: 2em;
+        width: 100%;
+        margin: 20px 15px;
+        padding: 0;
+    }
+    #cuento-cama {
+        height: auto;
+        width: 100%;
+    }
+
+    #titulo-links {
+        font-size: 1.7em;
+    }
+
+    .link > div {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .link > div img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Efectos HOVER bloqueados, aunque no funcionarían igualmente */
+    .link div img:hover {
+        opacity: 1;
+    }
+}
+
+/* Para dispositivos intermedios */
+@media (min-width: 481px) and (max-width: 1040px) {
+    #texto-lema { 
+        font-size: 3.5em;
+        width: 100%;
+        margin: 20px 15px;
+        padding: 0;
+    }
+
+    #cuento-cama {
+        height: auto;
+        width: 100%;
+    }
+
+    .link > div {
+        margin: 15px;
+    } 
+
+    /* Efectos HOVER bloqueados, aunque no funcionarían igualmente */
+    .link div img:hover {
+        opacity: 1;
+    }
+}
+
+
+/* Para IE */
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    #lema {
+        background-color: rgb(241, 241, 241);
+    }
+
+    .link div img {
+        border: 8px solid rgb(216, 215, 215);
+        
+    }
+
+    #texto-lema { 
+        width: 700px;
+    }
+}    

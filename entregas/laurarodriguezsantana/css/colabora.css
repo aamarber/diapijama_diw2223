@@ -1,0 +1,63 @@
+body{
+	color: #fff;
+}
+
+.encabezado{
+    text-align: center;
+}
+
+.colabora{
+	margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.colabora .tipo{
+    text-align: center;
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 210px);
+}
+
+.tipo{
+	height: 100%;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.tipo .boton {
+	background: #F49819;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+    margin-top: auto;
+    color: #1E335D;
+}
+
+.colabora .tipo:hover{
+    background-color: #e48d13;
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 850px){
+    .colabora{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .colabora .tipo{
+        text-align: center;
+        background-size: cover;
+        background-position: center center;
+        height: calc(100vh - 400px);
+    }
+}

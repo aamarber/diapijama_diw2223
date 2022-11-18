@@ -1,0 +1,224 @@
+ @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+   /* GENERAL */
+  .container {
+    height: 100%;
+  }
+
+  .container-fuente a {
+    color: #334854;
+  }
+  
+  .container-fuente a:hover {
+    color: #898AA6;
+  }
+  
+  .container h2 {
+    color: #334854;
+    
+  }
+  
+  .foto {
+    border: 5px solid white;
+  }
+  
+
+  
+  /*HEADER*/
+  
+  header {
+    background-color: white;
+  }
+  
+  header a {
+    color: #898AA6;
+  }
+  
+  #logo {
+    color: #898AA6;
+  }
+  
+  #logo:hover i {
+    color: #EFE3D0;
+  }
+  .lista-primaria > a:hover {
+    color: #334854;
+    border-color: #334854;
+  }
+  
+  .lista-secundaria li {
+    background-color: white;
+  }
+  
+  .lista-secundaria > li > a {
+    color: #334854;
+  }
+
+  .lista-secundaria, i a:hover {
+    color: #334854;
+  }
+  
+  .lista-primaria:hover .lista-secundaria {
+    background-color: white;
+  }
+  
+  /*FIN HEADER*/
+  
+  /*INICIO MAIN*/
+  main {
+    background-color: #EFE3D0;
+  }
+  
+  .presentacion {
+    color: #334854;
+  }
+  
+  .caja-presentacion {
+    color: #334854;
+    background-color: white;
+  }
+  
+  /*FIN MAIN COMUN*/
+  
+  
+  /*INICIO FOOTER*/
+  
+  footer {
+    background-color: #334854;
+    background-color: #334854;
+  }
+  
+  #caja-footer {
+    color: white;
+  }
+  /*FIN FOOTER*/
+  
+  /*MEDIA QUERYS COMUN*/
+ 
+  /*FIN GENERAL*/
+  
+  
+  /*MAIN PAGINA PRINCIPAL*/
+  
+  .pagina-principal {
+    background-image: url(./img/background-main.jpg);
+  }
+
+
+  /*PAGINA INICIATIVA*/
+  #fotopies {
+    height: 40%;
+  }
+  .pijama {
+    color: #334854;
+  }
+
+  .iniciativa {
+    width: 100%;
+  }
+
+  .presentacion {
+    display: block;
+    height: 100%;
+    margin-bottom: 50px;
+  }
+
+  .info {
+    display: block;
+  }
+
+  .info h3{
+    text-align: center;
+  }
+
+
+  /*PAGINA CONCIENCIAION*/
+  
+  p {
+    color: #334854;
+  }
+  
+  a {
+    color: #334854;
+  }
+  
+  a:hover {
+    color: #898AA6;
+  }
+  
+  footer p {
+    color: white;
+  }
+
+  /*PAGINA EXPERIENCIAS*/
+
+  .family {
+    border: 5px solid white;
+    height: 300px;
+  }
+
+  .family:hover {
+    box-shadow: 5px 5px 3px #334854;
+  }
+
+  .family img {
+    height: 100%;
+  }
+
+
+   /*PAGINA COLABORA*/
+   h4 {
+    color: #334854;
+  }
+  
+  .icono-colabora > i {
+    color: #334854;
+  }
+
+  .rejilla {
+    display: flex;
+  }
+
+  .align-bottom {
+    left:15px;
+  }
+
+  /*PAGINA ACOGIDA*/
+  
+
+  .container-acogida {
+    color: white;
+  }
+  
+ 
+  .modalidades-acogida>h4{
+    color: #334854;
+  }
+  
+  .superpuesto {
+    background-color: white;
+  }
+  .superpuesto p{
+    width: 90%;
+  }
+  
+  .container-acogida.tipos .tipos-acogida {
+    color: white;
+  }
+  
+  
+  .caracteristicas-acogida .tipos-acogida {
+    color: #334854;
+  }
+  
+  #fotofamilia{
+    width: 100%;
+    height: 22%;
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+  }
+

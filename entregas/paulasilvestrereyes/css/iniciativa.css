@@ -1,0 +1,61 @@
+#fotopies {
+  width: 100%;
+  height: 0 auto;
+}
+
+.iniciativa {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.pijama {
+  text-align: center;
+  letter-spacing: 0.5em;
+  color: var(--tertiary-color);
+}
+
+.contraerLetras {
+  -webkit-animation: contraerLetras 3.6s;
+  animation: contraerLetras 3.6s;
+  text-shadow: 5px 5px 16px rgba(0, 0, 0, 0.25);
+  white-space: nowrap;
+}
+
+/*MEDIAQUERY*/ 
+
+@media (max-width: 1165px) {
+  .contraerLetras {
+    animation: none;
+    letter-spacing: normal;
+  }
+}
+
+@media (max-width: 600px) {
+  .iniciativa {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: small;
+  }
+}
+
+/*KEYFRAMES*/
+
+@keyframes contraerLetras {
+  0% {
+    letter-spacing: normal;
+    opacity: 0;
+  }
+
+  50% {
+    letter-spacing: 1.3em;
+    opacity: 0.5;
+  }
+
+  100% {
+    letter-spacing: 0.5em;
+    opacity: 1;
+  }
+}

@@ -1,0 +1,107 @@
+body{
+	background: #1E335D;
+	color: #fff;
+}
+
+.encabezado{
+    text-align: center;
+    padding: 20px 0;
+}
+.contenedor{
+	width: 95%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 10px 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.titulo{
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+.contenedor-eventos{
+	color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.evento{
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+}
+
+.evento .textos-eventos{
+	height: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenedor-evento-principal {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.contenedor-evento-principal .boton {
+	background: #F49819;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	cursor: pointer;
+    color: #1E335D;
+}
+
+.contenedor-evento-principal:hover,
+.contenedor-eventos .evento:hover{
+    background-color: #e48d13;
+    box-shadow: 0 1px 6px 1px rgba(0, 0, 0, .2);
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 950px){
+    .contenedor{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    }
+    .contenedor-eventos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .contenedor-eventos{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

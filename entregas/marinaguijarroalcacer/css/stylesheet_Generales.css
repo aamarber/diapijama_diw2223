@@ -1,0 +1,348 @@
+/* CLASES COMUNES */
+@font-face {
+    font-family: montserrat-regular;
+    src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+
+
+
+/* COLORES */
+:root {
+    --amarillo: rgb(243, 243, 36);
+    --amarillo-suave: rgb(247, 247, 113);
+    --gris-medio: rgb(216, 215, 215);
+    --gris-claro: rgba(46, 44, 44, 0.055);
+}
+
+
+/* GENERALES */
+.caption, .caption a {
+    font-size: 0.8em;
+    text-align: end;
+    color: black;
+}
+
+* {
+    font-family: montserrat-regular, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: lighter;
+    margin: 0 25px;
+}
+
+h2 {
+    font-size: 2.8em;
+    display: inline;
+    z-index: 1;
+    position: relative;
+}
+
+p {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.padding25 {
+    padding-left: 25px;
+}
+
+
+/* HIGHLIGHT, STRONG E ITALIC */
+.highlight {
+    background-color: var(--amarillo);
+}
+
+nav .highlight {
+    color: black;
+}
+
+.highlight-suave {
+    background-color: var(--amarillo-suave);
+}
+
+.highlight-grey {
+    background-color: var(--gris-medio);
+}
+
+.highlight-black {
+    background-color: black;
+    color: var(--gris-medio);
+}
+ 
+.strong {
+    font-weight:bold;
+    font-size: 1.2em;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 1.2em;
+}
+
+
+/* DIVS AMARILLOS */
+.yellow-container {
+    background-color: var(--amarillo);
+    width: 45%;
+    height: 50px;
+    top: -22px;
+    position: relative;
+}
+
+.yellow-container-left {
+    left: 55px;
+}
+
+.yellow-container-right {
+    right: 55px;
+    margin-left: auto;
+}
+
+.question {
+    padding: 25px 25px 0 25px
+}
+
+
+/* FUENTES */
+.black-link {
+    color: black;
+}
+
+.mas-info {
+    background-color: var(--gris-claro);
+    padding: 25px;
+}
+
+.mas-info a {
+    font-size: 0.8em;
+    padding: 10px;
+    color: black;
+}
+
+
+/* BODY */
+body {
+    margin: 0;
+}
+
+
+/* NAV Y BAJO NAV*/
+nav {
+    display: flex;
+    font-size: 14px;
+    background-color: var(--gris-medio);
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    margin-bottom: 0;
+    z-index: 5;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align:right;
+    margin-right: 10px;
+}
+
+nav li {
+    display: inline-block;
+    text-align: right;
+    background-color: black;
+    border-radius: 2px;
+    margin-right: 3px;
+    padding: 6px;
+    transition: transform 0.3s linear;
+}
+
+nav ul li:not(.highlight):hover {
+    cursor: pointer;
+    background-color: var(--amarillo-suave);
+    transform: scale(1.08,1.08);
+}
+
+nav ul li:not(.highlight):hover a {
+    color: black;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+.bajo-nav {
+    margin-top: 0;
+    padding-top: 100px;
+}
+
+.bajo-nav > div {
+    padding: 0px 25px 25px 25px;
+}
+
+.bajo-nav div:nth-child(2) .question {
+    margin-left: auto;
+    text-align: right;
+}
+
+.bajo-nav > div:nth-child(2){
+    padding-top: 5px;
+    background-color: var(--gris-claro);
+}
+
+
+/* FOOTER */
+footer {
+    font-size: 0.8em;
+    background-color: black;
+    color:var(--gris-medio);
+    padding: 20px;
+    align-items: center;
+    text-align: right;
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE */
+
+/* https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/
+320px — 480px: Mobile devices
+481px — 768px: iPads, Tablets
+769px — 1024px: Small screens, laptops
+1025px — 1200px: Desktops, large screens
+1201px and more —  Extra large screens, TV
+*/
+
+/* Para móviles */
+@media (max-width: 480px) {
+    h1 { 
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    nav {
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    /* Efectos HOVER bloqueados, aunque no funcionarían igualmente */
+    nav ul li:not(.highlight):hover {
+        transform: none;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav li {
+        margin-bottom: 5px;
+    }
+
+    .caption, .caption a {
+        text-align: center;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .question {
+        padding: 15px 15px 0 15px;
+    }
+
+    .padding25 {
+        padding-left: 10px;
+    }
+}
+
+
+/* Para dispositivos intermedios */
+@media (min-width: 481px) and (max-width: 1040px) {
+    h1 { 
+        font-size: 2.3em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    nav {
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    /* Efectos HOVER bloqueados, aunque no funcionarían igualmente */
+    nav ul li:not(.highlight):hover {
+        transform: none;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .caption, .caption a {
+        text-align: right;
+    }
+
+    .padding25 {
+        padding-left: 20px;
+    }
+}
+
+
+/* Para IE */
+@media (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    .highlight {
+        background-color: rgb(243, 243, 36);
+    }
+
+    .highlight-suave {
+        background-color: rgb(247, 247, 113);
+    }
+    
+    .highlight-grey {
+        background-color: rgb(216, 215, 215);
+    }
+    
+    .highlight-black {
+        color: rgb(216, 215, 215);
+    }
+
+    .yellow-container {
+        background-color: rgb(243, 243, 36);
+    }
+    
+    .mas-info {
+        background-color: rgb(241, 241, 241);
+    }
+    
+    nav {
+        background-color: rgb(216, 215, 215);
+    }
+
+    nav ul li:not(.highlight):hover {
+        background-color: rgb(247, 247, 113);
+    }
+    
+    .bajo-nav > div:nth-child(2){
+        background-color: rgb(241, 241, 241);
+    }
+    
+    footer {
+        color:rgb(216, 215, 215);
+    }
+}

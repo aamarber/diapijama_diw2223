@@ -7,12 +7,13 @@
     --main-color: #b2a6f4;
     --pijama-color: #F9E385;
     --border-radius: 0.3rem;
-    --web-box-size: 20rem;
+    --web-box-size: 24rem;
+    --font-size: 24px;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: var(--font-size);
     background-color: #FAE3E3;
 }
 
@@ -78,8 +79,8 @@ main{
     object-fit: contain;
 }
 
-.web a{
-    margin-top: 1.2rem;
+.web a:not(.button){
+    height: 0;
 }
 
 .button {
@@ -88,4 +89,4 @@ main{
     color: white;
     padding: 2px 6px 2px 6px;
     border: solid 0.2rem var(--main-color);
-  }
+}

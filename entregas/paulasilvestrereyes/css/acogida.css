@@ -1,0 +1,150 @@
+#fotofamilia {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+}
+
+.container-acogida {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: var(--quaternary-color);
+  position: relative;
+  z-index: 1;
+}
+
+.container-acogida::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  background-color: var(--tertiary-color);
+  width: 140%;
+  z-index: -1;
+}
+
+.numero {
+  font-weight: 600;
+  font-size: 38px;
+}
+
+.tipos-acogida {
+  padding: 15px;
+  margin: 10px;
+  width: 30%;
+}
+
+.width40 {
+  width: 40%;
+}
+
+.width25 {
+  width: 25%;
+}
+
+.modalidades-acogida h4 {
+  text-align: center;
+}
+
+.modalidades-acogida>h4{
+  color: var(--tertiary-color);
+}
+
+.superpuesto {
+  position: absolute;
+  bottom: 95%;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background-color: var(--quaternary-color);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.superpuesto p {
+  margin: 0 30px 30px;
+}
+
+.superpuesto h2 {
+  margin: 60px auto;
+}
+
+.container > h2 {
+  margin-top: 250px;
+}
+
+.container-acogida.tipos {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-acogida.tipos .tipos-acogida {
+  color: var(--quaternary-color);
+  width: 90%;
+  font-weight: 200;
+}
+
+.container-acogida.tipos h4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.caracteristicas-acogida {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 100%;
+}
+
+.caracteristicas-acogida .tipos-acogida {
+  margin-top: 40px;
+  width: 45%;
+  padding: 20px 45px;
+  font-weight: 200;
+  color: var(--tertiary-color);
+}
+
+.caracteristicas-acogida h4 {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.caracteristicas-acogida .tipos-acogida:first-child {
+  border-right: 1px solid lightslategray;
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width: 650px) {
+  .caracteristicas-acogida {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .caracteristicas-acogida .tipos-acogida {
+    width: 90%;
+  }
+
+  .caracteristicas-acogida .tipos-acogida:first-child {
+    border: none;
+  }
+
+  .width40 {
+    width: 100%;
+  }
+
+  .superpuesto {
+    width: 90%;
+    font-size: small;
+    height: 400px;
+  }
+
+  .container > h2 {
+    margin-top: 400px;
+  }
+}

@@ -1,0 +1,561 @@
+/* ------Índice------
+    Reset
+    Custom properties
+    Generalidades
+        html
+        body
+        .enlace-boton
+    Cabecera y menú de navegación
+    Footer
+    Contenido
+    Imágenes
+    Tarjetas
+    Tarjetas mini
+    Tarjetas numeradas
+    Tarjeta jumbo
+    Formulario
+    Cargando
+    Enviado
+    Página bienvenida
+
+    @media queries
+        Cabecera y nav
+        Contenido
+        Tarjetas - retoques
+*/
+
+/*
+    CSS general para resolución móvil
+    Testeado móvil pequeño (360 x 640)
+    Adaptado hasta móvil grande 720 de ancho
+    https://www.jluislopez.es/diseno-web-responsive/
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Custom properties */
+/* 
+    Sin uso, por IE 11, pero reunidas aquí para
+    la fase de desarrollo 
+*/
+
+:root {
+    /* Paleta generada en coolors.co */
+    --color-1: #AA4465;
+    --color-2: #FFA69E;
+    --color-3: #abdae2;
+    --color-4: #ddf1ff;
+    --color-5: #462255;
+
+    /* Google Fonts */
+    --fuente-sans: 'Open Sans', sans-serif;
+    --fuente-serif: 'Bree Serif', serif;
+    --fuente-cursiva: 'Courgette', cursive;
+}
+
+/* Generalidades */
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url('../img/fondo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    /* Esto me permite enviar el footer al fondo
+    si el contenido no me llena el viewport */
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+/* No se recomienda el uso de botones que actúen como enlaces.
+ver: https://es.stackoverflow.com/questions/48805/como-crear-un-bot%C3%B3n-html-que-funcione-como-un-link */
+
+a.enlace-boton {
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    padding: 15px;
+    background-color: #abdae2;
+    font-size: 1.2em;
+    text-align: center;
+    color: #462255;
+}
+
+/* Cabecera y menú de navegación */
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFA69E;
+    padding: 5px 20px;
+    height: 70px;
+}
+
+header img {
+    display: inline-block;
+    width: 100px;
+}
+
+header h1 {
+    font-family: 'Courgette', cursive;
+    align-self: center;
+    color: #462255;
+    font-size: 1.7em;
+}
+
+nav {
+    background-color: #FFA69E;
+
+    /* Tristemente, no soportado en IE11 */
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    color: #462255;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    animation: clareo .4s forwards;
+}
+
+@keyframes clareo {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: .6;
+    }
+
+}
+
+.enlace-pagina-actual {
+    pointer-events: none;
+    opacity: .7;
+}
+
+/* Footer */
+footer {
+    background-color: #462255;
+    color: white;
+    text-align: center;
+
+    /* Para pegarlo abajo si no se llena el viewport */
+    margin-top: auto;
+}
+
+footer a {
+    color: lightgray;
+}
+
+footer .cc {
+    width: 100px;
+    margin-top: 5px;
+}
+
+/* Contenido */
+.contenido {
+    /* width: min(100vw, 500px); */
+    /*
+        min() no soportado en IE11,
+        en adelante, definiremos dos propiedades
+        width y max-width
+    */
+    width: 100vw;
+    max-width: 500px;
+    margin: 20px auto 0;
+}
+
+h2 {
+    font-family: 'Bree Serif', serif;
+    color: #AA4465;
+    font-size: 1.7em;
+}
+
+article {
+    color: #462255;
+    background-color: #ddf1ff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px 40px;
+}
+
+article span {
+    font-weight: 600;
+}
+
+article p {
+    margin: 5px 0;
+}
+
+.texto-importante {
+    color: #AA4465;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+/* Imágenes */
+img {
+    width: 100%;
+}
+
+/* Tarjetas */
+.tarjeta {
+    background-color: #abdae2;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.titulo-tarjeta {
+    font-size: 1.3em;
+    color: #AA4465;
+}
+
+.tarjeta ul li {
+    margin-left: 20px;
+    list-style-type: circle;
+}
+
+.tarjeta .texto-tarjeta a,
+.tarjeta .texto-tarjeta a:visited {
+    color: #AA4465;
+}
+
+
+.tarjeta .enlace-boton {
+    background-color: #FFA69E;
+    margin-top: 10px;
+}
+
+
+/* Tarjetas mini */
+.contenedor-tarjetas-mini {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+    padding: 0;
+}
+
+.tarjeta-mini {
+    text-align: center;
+    flex-basis: 33.33333%;
+}
+
+/* Tarjetas numeradas */
+.tarjeta-numerada {
+    display: grid;
+    grid-template: auto auto / 2fr 6fr 2fr;
+    column-gap: 5px;
+}
+
+.tarjeta-numerada .numero {
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    align-self: center;
+    justify-self: center;
+    background-color: #ddf1ff;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 50px;
+    color: #462255;
+}
+
+.tarjeta-numerada .titulo-tarjeta,
+.tarjeta-numerada .texto-tarjeta,
+.tarjeta-numerada .enlace-boton {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.tarjeta-numerada:nth-child(2n-1) .numero {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.tarjeta-numerada:nth-child(2n-1) .titulo-tarjeta,
+.tarjeta-numerada:nth-child(2n-1) .texto-tarjeta,
+.tarjeta-numerada:nth-child(2n-1) .enlace-boton {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+/* Tarjeta jumbo */
+.tarjeta-jumbo {
+    color: #AA4465;
+    text-align: center;
+}
+
+.titulo-tarjeta-jumbo {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5em;
+    font-weight: 600;
+}
+
+.tarjeta-jumbo .texto-tarjeta {
+    margin: 0 auto;
+}
+
+/* Formulario */
+label {
+    display: block;
+    margin-top: 5px;
+}
+
+#mail,
+#mensaje {
+    border: none;
+    border-radius: 5px;
+    width: calc(100% - 10px);
+    padding: 5px;
+}
+
+#mail {
+    height: 2em;
+}
+
+#mensaje {
+    height: 300px;
+}
+
+/* Cargando */
+.cargando {
+    display: table;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, .7);
+    z-index: -10;
+
+    animation: desaparece 3s forwards;
+}
+
+@keyframes desaparece {
+    from {
+        opacity: 1;
+    }
+
+    99.999% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.tarjeta-cargando {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tarjeta-cargando p {
+    text-align: center;
+    color: #462255;
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: auto;
+    border: 10px solid #FFA69E;
+    position: relative;
+}
+
+.circulo::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-top-color: #AA4465;
+    box-sizing: border-box;
+
+    animation: vueltas 2s linear infinite;
+}
+
+@keyframes vueltas {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Enviado */
+.contenedor-enviado {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.enviado {
+    align-self: center;
+    flex-grow: 1;
+
+    opacity: 0;
+    z-index: 10;
+
+    animation: aparece 3s forwards;
+}
+
+@keyframes aparece {
+    from { opacity: 0; }
+    99.999% { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Página bienvenida */
+.bienvenida {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, .7);
+    overflow: hidden;
+}
+
+.bienvenida .titulo {
+    color: #462255;
+    align-self: center;
+    font-size: 1.5em;
+    text-align: center;
+    text-shadow: 2px 2px 4px #6e6d6d;
+
+    transform: translateX(150vh);
+    animation: entrada 1s linear forwards;
+}
+
+@keyframes entrada {
+    from { transform: translateX(150vh); }
+    to { transform: translateX(0px); }
+}
+
+.bienvenida .titulo span {
+    color: #AA4465;
+    font-size: 1.5em;
+}
+
+.bienvenida .tarjeta-mini {
+    flex-basis: auto;
+    align-self: center;
+    animation: fadeIn .5s linear 2s forwards;
+    opacity: 0;
+    background-color: #abdae2;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.bienvenida .tarjeta-mini a {
+    background-color: #FFA69E;
+    animation: parpadeo 1s linear 5s infinite;
+}
+
+@keyframes parpadeo {
+    from { opacity: 1; }
+    20% { opacity: .6; }
+    50% { opacity: 1; }
+    to { opacity: 1; }
+}
+
+/* 
+    Pantallas más grandes que móvil
+    Testeado en escritorio medio (1440 x 900)
+    (segun CanIUse, IE no soporta @media,
+    pero funciona en una máquina virtual Win7)
+*/
+@media (min-width: 721px) {
+
+    /* Cabecera y nav */
+    header {
+        justify-content: space-between;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        width: 100%;
+        max-width: 800px;
+    }
+
+    /* Contenido */
+    .contenido {
+        width: 100%;
+        max-width: 1080px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    article {
+        width: 40%;
+        max-width: 700px;
+        flex-basis: auto;
+    }
+
+    /* Tarjetas - retoques */
+    .contenedor-tarjetas-mini,
+    .tarjeta-jumbo {
+        width: calc(100% - 80px);
+    }
+
+    .tarjeta-jumbo {
+        align-items: center;
+    }
+
+    .tarjeta-jumbo p {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    /* Reorganización más estética */
+    .order-1 { order: 1; }
+
+    .order-2 { order: 2; }
+
+    .tarjeta-formulario {
+        width: 100%;
+        max-width: 600px;
+    }
+}
