@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="dia del pijama.Promocionamos el dia del pijama en los colegios para promover el acogimiento familiar. Para que el derecho de los niños a crecer en familia sea una realidad">
+    <meta name="keywords" content="día, pijama, acogimiento, familiar, infancia, ayuda, menores, asociaciones">
+    <meta name="author" content="Marian Baena">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Apunta a tu colegio</title>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="menupeq">
+        <label for="menupeq"><i class="fa-solid fa-bars"></i></label>
+        <div class="menu">
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house-chimney"></i> Día del pijama</a></li>
+                <li><a href="acogimiento.html">Acogimiento familiar</a></li>
+                <li><a href="infancia.html">Infancia en datos</a></li>
+                <li><a href="inscripcion.html">Apunta tu colegio</a></li>
+                <li><a href="asociaciones.html">Quienes somos</a></li>
+                
+            </ul>
+        </div>
+        <div class="rsociales">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+
+    </nav>
+
+    <header class="grid">
+        <div class="header_izda">
+            <h2>20 de</h2><br><h2>noviembre</h2>
+            <h1>día del pijama</h1>
+            <p>por el derecho de todos los niños y niñas a crecer en familia</p>
+            <div id="boton_a">
+                <a href="./inscripcion.html">Apúntate!</a> 
+                </div> 
+        </div>
+        <div class="header_dcha">
+            <div class="imagen portada">
+                <img src="img/000pexels-liliana-drew-8501539.png"
+                    alt="Foto de Liliana Drew de Pexels: https://www.pexels.com/es-es/foto/moda-nina-infancia-ninos-8501539/">
+            </div>
+            <div class="header-clipart1">
+                <img src="./img/cometa2.svg" alt="imagen de una cometa, de freepik https://www.freepik.es/vector-gratis/ninos-flotantes-suenan-dia-nino_5761470.htm">
+            </div>
+            <div class="clip2">
+                <img src="./img/estrella2.svg" alt="imagen de una estrella, de freepik https://www.freepik.es/vector-gratis/ninos-flotantes-suenan-dia-nino_5761470.htm">
+            </div>
+            <div class="clip3">
+                <img src="./img/estrella3.svg" alt="imagen de una estrella, de freepik https://www.freepik.es/vector-gratis/ninos-flotantes-suenan-dia-nino_5761470.htm">
+            </div>
+            <div class="clip4">
+                <img src="./img/estrella4.svg" alt="imagen de una estrella, de freepik https://www.freepik.es/vector-gratis/ninos-flotantes-suenan-dia-nino_5761470.htm">
+            </div>
+            <div class="clip5">
+                <img src="./img/molinillo.svg" alt="imagen de un molinillo, de freepik https://www.freepik.es/vector-gratis/ninos-flotantes-suenan-dia-nino_5761470.htm">
+            </div>
+
+        </div>
+
+    </header>
+
+<main>
+    <section class="grid">
+        <div class="section_uno--top">
+            <h3>APUNTA TU COLEGIO</h3>
+        </div>
+        <div class="section_uno--bottom-form flex">
+        <form action="/form.php" method="POST">
+            <fieldset>
+                <legend><h4> Formulario para participar en el Día del Pijama 2022 </h4></legend><br>
+                <label for="colegio">Nombre del colegio, instituto o escuela infantil:</label><br>
+                <input type="text" id="colegio" name="nombre_colegio" class="campos" required
+                    pattern="[A-zÀ-ú]{2,128}$"><br>
+                <label for="nombre">Nombre de quien rellena el formulario:</label><br>
+                <input type="text" id="nombre" name="nombre_participante" required pattern="[A-zÀ-ú .ºª]{2,50}$"
+                    class="campos"><br>
+                <label for="apellidos">Apellidos de quien rellena el formulario:</label><br>
+                <input type="text" id="apellidos" name="apellidos_participante" required pattern="[A-zÀ-ú]{2,128}$"
+                    class="campos"><br>
+                <label for="cargo">Cargo de quien rellena el formulario:</label><br>
+                <input type="text" id="cargo" name="cargo_participante" class="campos"><br>
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono_participante" required
+                    pattern="(6|7)[ -]*([0-9][ -]*){8}" class="campos"><br>
+                <label for="email">Correo electrónico (email):</label><br>
+                <input type="email" id="email" name="email_participante" required
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" class="campos"><br>
+                <input type="submit" value="Enviar" id="button">
+            </fieldset>
+        </form>
+
+        <div class="clipart_form">
+        <img src="./img/freepik03.svg" alt="Imagen
+        de pikisuperstar en Freepik https://www.freepik.es/vector-gratis/ninos-flotantes-suenan-dia-nino_5761470.htm">
+        </div>
+        <div class="clip-form">
+            <img src="./img/freepik03b.svg" alt="Imagen
+            de pikisuperstar en Freepik https://www.freepik.es/vector-gratis/ninos-flotantes-suenan-dia-nino_5761470.htm">
+        </div>
+    
+        </div>
+        </div>
+
+        </div>
+    </section>
+
+   
+    
+</main>
+
+<footer class="grid">
+    <h3>Diseño de Interfaces web</h3>
+    <h4>CEEDCV 2022</h4>
+    <p>maria angeles baena dorado</p>
+    <p><i class="fa-regular fa-envelope"></i> <a href="mailto:marian.baena@outlook.com">marian.baena@outlook.com</a>
+    </p>
+
+</footer>
+
+</body>
+</html>

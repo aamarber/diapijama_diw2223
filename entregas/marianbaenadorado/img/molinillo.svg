@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="167px" height="253px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;">
+    <g transform="matrix(1,0,0,1,-0.000435541,0.0011286)">
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(1.1499,2.5875,2.5875,-1.1499,397.331,782.54)">
+                <path d="M-17.742,-27.301L42.007,-27.301" style="fill:none;fill-rule:nonzero;stroke:#413c42;stroke-width:1.51px;"/>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(2.8315,0,0,2.8315,322.852,686.288)">
+                <g>
+                    <path d="M0,30.934L-28.5,-4.84C-28.5,-4.84 -35.296,23.568 -26.629,29.671C-17.963,35.774 0,30.934 0,30.934" style="fill:#f97a5b;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(2.59182,1.14013,1.14013,-2.59182,244.923,711.384)">
+                <g>
+                    <path d="M-1.232,-5.859C-1.232,-5.859 7.009,-13.196 27.87,-5.859" style="fill:none;fill-rule:nonzero;stroke:#413c42;stroke-width:0.5px;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(2.8315,0,0,2.8315,306.278,675.786)">
+                <g>
+                    <path d="M0,38.78L24.251,0C24.251,0 -4.799,3.044 -7.67,13.248C-10.542,23.451 0,38.78 0,38.78" style="fill:#fbe4ae;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(-0.212694,2.82351,2.82351,0.212694,351.887,741.956)">
+                <g>
+                    <path d="M-18.735,-11.643C-18.735,-11.643 -10.493,-18.98 10.367,-11.643" style="fill:none;fill-rule:nonzero;stroke:#413c42;stroke-width:0.5px;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(2.8315,0,0,2.8315,288.72,806.828)">
+                <g>
+                    <path d="M0,-13.709L38.78,10.542C38.78,10.542 35.736,-18.508 25.532,-21.379C15.329,-24.251 0,-13.709 0,-13.709" style="fill:#cceae2;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(-2.82351,-0.212694,-0.212694,2.82351,306.522,759.208)">
+                <g>
+                    <path d="M-29.276,6.835C-29.276,6.835 -21.035,-0.503 -0.175,6.835" style="fill:none;fill-rule:nonzero;stroke:#413c42;stroke-width:0.5px;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(2.8315,0,0,2.8315,307.412,855.726)">
+                <g>
+                    <path d="M0,-37.166L-26.659,0C-26.659,0 2.526,-1.198 6.038,-11.199C9.55,-21.2 0,-37.166 0,-37.166" style="fill:#fbe4ae;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(0.391144,-2.80436,-2.80436,-0.391144,335.123,824.857)">
+                <g>
+                    <path d="M-10.651,16.582C-10.651,16.582 -2.41,9.245 18.45,16.582" style="fill:none;fill-rule:nonzero;stroke:#413c42;stroke-width:0.5px;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(1,0,0,1,-231.926,-672.585)">
+            <g transform="matrix(2.32408,1.61743,1.61743,-2.32408,299.548,770.52)">
+                <g>
+                    <path d="M1.45,-0.455C2.851,-0.455 3.989,0.681 3.989,2.083C3.989,3.486 2.852,4.622 1.45,4.622C0.049,4.622 -1.089,3.486 -1.088,2.084C-1.089,0.681 0.048,-0.455 1.45,-0.455" style="fill:#fff;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
