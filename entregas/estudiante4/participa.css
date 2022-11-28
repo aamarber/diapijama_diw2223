@@ -1,0 +1,32 @@
+.main-wrapper {
+    grid-template-areas: 
+        "option1 img-option1"
+        "img-option2 option2";    
+    grid-template-rows: 1fr 1fr;
+}
+
+.options-main li {
+    color: #000;
+    margin: 1rem 0;
+}
+
+.options-main a {
+    color: #000;
+}
+
+/*******************/
+/** Media Querys ***/
+/*******************/
+
+@media screen and (max-width: 756px) {
+
+    .main-wrapper {
+        grid-template-areas: 
+        "option1"
+        "img-option1"
+        "option2"
+        "img-option2";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}

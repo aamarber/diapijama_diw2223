@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="El día 20 de noviembre en ASEAF celebramos el Día del Pijama, con el objetivo dar visibilidad a los niños y jóvenes que viven en centros de acogida">
+    <link rel="stylesheet" href="./common.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Home: Día del pijama</title>
+</head>
+<body>
+    <header class="header-wrapper flex-center-center"><h1>DIA DEL PIJAMA</h1></header>
+    <nav class="nav-wrapper flex-around-center">
+        <div class="logo"><img src="../images/logos/aseaf.webp" alt="logo-aseaf"></div>
+        <ul class="effect-box-shadow-orange">
+            <li><a href="./dia-del-pijama.html" class="nav-option">Día del pijama</a> </li>
+            <li><a href="./info-acogida.html" class="nav-option">Info acogida</a></li>
+            <li><a href="./quienes-somos.html" class="nav-option">¿Quiénes somos?</a></li>
+            <li><a href="./participa.html" class="nav-option">Participa</a></li>
+            <li><a href="#container-form-contact" class="nav-option">Contacto</a></li>
+        </ul>
+    </nav>
+    <main class="main-wrapper">
+        <div class="options-main flex-column-center-left container-summary" id="container-summary1">
+            <h2>¿Qué celebramos el día del pijama?</h2>
+            <p>El día 20 de noviembre, con motivo de la aprobación de la Convención Internacional de los Derechos del Niño, desde ASEAF celebramos el Día del Pijama, con el objetivo dar visibilidad a los niños y jóvenes que viven en centros de acogida y concienciar sobre el derecho de todos los menores a vivir en un hogar con una familia...</p>
+            <a class="button-show-more" id="dia-del-pijama" href="./dia-del-pijama.html" aria-label="Más información sobre el día del pijama"></a>
+        </div>
+        <div class="options-main" id="container-image1">
+            <img src="../images/options/dia-pijama.webp" alt="niña durmiendo en pijama"></img>
+        </div>
+        <div class="options-main flex-column-center-left container-summary" id="container-summary2">
+            <h2>Todo lo que necesitar saber sobre la acogida</h2>
+            <p>El Acogimiento Familiar es una medida de protección por la que el menor en situación de desamparo, que no puede o no debe vivir con su familia biológica, pasa a integrarse en una familia de acogida. Produce la plena participación del menor en la vida de la familia, y son obligaciones de quien lo recibe el velar por el menor, tenerlo en su compañía, alimentario, educarlo y procurarle una formación integral...</p>
+            <a class="button-show-more" id="info-acogida" href="./info-acogida.html" aria-label="Más información sobre la acogida"></a>
+        </div>
+        <div class="options-main" id="container-image2">
+            <img src="../images/options/info-acogida.webp" alt="hijo montando en bici con su padre"></img>
+        </div>
+        <div class="options-main flex-column-center-center container-summary" id="container-summary3">
+            <h2>Somos un grupo de asociaciones con un objetivo común</h2>
+            <p>ASEAF está integrada por 21 asociaciones de distintas Comunidades Autónomas y Provincias formadas, en su mayoría, por familias acogedoras. Todos juntos sumamos para crear una cultura del acogimiento familiar a nivel nacional...</p>
+            <a class="button-show-more" id="quienes-somos" href="./quienes-somos.html" aria-label="Más información sobre quienes somos"></a>
+        </div>
+        <div class="options-main flex-column-center-center container-summary background-opacity" id="container-summary4">
+            <h2>Ayúdanos a ayudar</h2>
+            <p>Si no puedes ser familia acogedora, ¡no te preocupes! Hay muchas maneras de apoyar el acogimiento familiar. Desde el voluntariado, haciéndote socio, donando o simplemente difundiendo para dar mayor visibilidad a los menores. Y si eres empresa, también puedes sumarte a la causa..</p>
+            <a class="button-show-more" id="participa" href="./participa.html" aria-label="Cómo colaborar con nosotros"></a>
+        </div>
+        <div class="options-main flex-column-center-center" id="container-form-contact">
+            <h2>Contáctanos</h2>
+            <form class="contact-form" method="post" name="formulario" action="./index.html">
+                <div class="elementor-form-fields-wrapper flex-center-center">
+                    <div class="elementor-field-type-text elementor-field-group elementor-col-50 flex-right-center" required>
+                        <label for="form-field-name" class="elementor-field-label elementor-screen-only"></label>
+                        <input type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-field-textual" placeholder="Nombre" required="required" aria-required="true">
+                    </div>
+                    <div class="elementor-field-type-text elementor-field-group elementor-col-50 flex-left-center">
+                        <label for="form-field-surname" class="elementor-field-label elementor-screen-only"></label>
+                        <input type="text" name="form_fields[surname]" id="form-field-surname" class="elementor-field elementor-field-textual" placeholder="Apellidos">
+                    </div>
+                    <div class="elementor-field-type-email elementor-field-group elementor-col-50 flex-right-center" required>
+                        <label for="form-field-email" class="elementor-field-label elementor-screen-only"></label>
+                        <input type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-field-textual" placeholder="Email" required="required" aria-required="true">
+                    </div>
+                    <div class="elementor-field-type-tel elementor-field-group elementor-col-50 flex-left-center">
+                        <label for="form-field-tel" class="elementor-field-label elementor-screen-only"></label>
+                        <input type="tel" name="form_fields[tel]" id="form-field-tel" class="elementor-field elementor-field-textual" placeholder="Teléfono" pattern="[0-9()#&amp;+*-=.]+" title="Solo se aceptan números y caracteres de teléfono (#,-,*,etc).">
+                    </div>
+                    <div class="elementor-field-type-textarea elementor-field-group elementor-col-100 flex-center-center">
+                        <label for="form-field-message" class="elementor-field-label elementor-screen-only"></label>
+                        <textarea class="elementor-field-textual elementor-field" name="form_fields[message]" id="form-field-message" rows="4" placeholder="Escriba su mensaje"></textarea>
+                    </div>
+                    <div class="elementor-field-type-checkbox elementor-field-group">
+                        <label for="form-field-aceptacion" class="elementor-field-label elementor-screen-only"></label>
+                        <div class="elementor-field-subgroup  elementor-subgroup-inline">
+                            <span class="elementor-field-option">
+                            <input type="checkbox" value="He leído y acepto la <a href=&quot;#&quot;>política de privacidad</a>" id="form-field-aceptacion" name="form_fields[aceptacion]"> 
+                            <label for="form-field-aceptacion-0">He leído y acepto la<a href="#" aria-label="Política de privacidad"> política de privacidad </a></label></span>
+                        </div>
+                    </div>
+                    <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 flex-center-center">
+                        <button name="Enviar formulario" type="submit" class="elementor-button" id="contact-button-submit">
+                            Enviar formulario
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+            </div>
+</div>
+                    </div>
+</section>
+        </div>
+        <div id="visual-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.6914497675525!2d-3.7269124845138792!3d40.41568566362665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4229d2afee9d37%3A0xc15320b7a425d4c9!2sC.%20de%20Saavedra%20Fajardo%2C%205%2C%207%2C%20BAJO%2C%2028011%20Madrid!5e0!3m2!1ses!2ses!4v1667987519123!5m2!1ses!2ses" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="localización de aseaf en mapa"></iframe>
+        </div>
+    </main>
+    <footer class="footer-wrapper flex-around-center">
+        <div class="container-footer-left flex-around-center">
+            <div id="container-logo-footer">
+                <a href="https://www.aseaf.org/"><img src="../images/logos/aseaf.webp" alt="logo ASEAF"></a>
+            </div>
+            <div class="container-data-footer">
+                <p id="name-footer" class="data-footer">ASEAF - Asociación Estatal de Acogimiento Familiar</p>
+                <p id="direction-footer" class="data-footer">C/ Saavedra Fajardo, 5-7, Bajo, 28011, Madrid</p>
+                <p id="telephone-footer" class="data-footer">Tel.: 633738461</p>
+                <p id="legal-terms">
+                    <a href="#" id="legal-advise" aria-label="Aviso legal">Aviso legal</a>
+                    <span> | </span>
+                    <a href="#" id="privacy-policy" aria-label="Política de privacidad">Política de privacidad</a>
+                </p>
+            </div>
+        </div>
+        <div class="container-footer-right">
+            <ul class="flex-wrap">
+                <li class="social-media">
+                    <a href="https://www.instagram.com/aseaf_isn/?hl=es" id="instagram">
+                        <img src="../images/logos/instagram.webp" alt="instagram de ASEAF">
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a href="https://www.facebook.com/people/Aseaf_isn/100064403785088/" id="facebook">
+                        <img src="../images/logos/facebook.webp" alt="facebook de ASEAF">
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a href="https://twitter.com/ASEAF_ISN" id="twitter">
+                        <img src="../images/logos/twitter.webp" alt="twitter de ASEAF">
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a href="https://www.youtube.com/channel/UCeSmi5FQ15mRUFxNj97eQQw" id="youtube">
+                        <img src="../images/logos/youtube.webp" alt="youtube de ASEAF">
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a href="https://web.whatsapp.com/send?phone=+34633738461" id="whatsapp">
+                        <img src="../images/logos/whatsapp.webp" alt="whatsapp de ASEAF">
+                    </a>
+                </li>
+                <li class="social-media">
+                    <a href="https://web.telegram.org" id="telegram">
+                        <img src="../images/logos/telegram.webp" alt="telegram de ASEAF">
+                    </a>
+                </li>
+            </ul>
+            <p><a href="https://www.pexels.com/es-es/" aria-label="web de pexels">Imágenes con licencia CC de pexels</a></p><p><a href="https://www.flaticon.es/" aria-label="web de flaticon">Iconos con licencia CC de flaticon</a></p>
+        </div>
+    </footer>
+</body>
+</html>
